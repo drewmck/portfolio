@@ -1,0 +1,239 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Andrew McKinney">
+	<!-- Date: 2012-03-06 -->
+
+	<meta id="viewport" name="viewport" content="width=device-width">
+
+
+
+	<!-- <script src="./script/jquery-1.7.2.min.js"></script>
+	<script>
+
+	if ($(window).width() > 320 & $(window).width() <= 480) {
+		 $('meta[name=viewport]').attr('content','width=480');
+	}
+	else if ($(windo
+	w).width() > 481) {
+		 $('meta[name=viewport]').attr('content','width=1024');
+	}
+
+	</script> -->
+
+	<title>Pivotal Tracker Analytics - Andrew McKinney</title>
+
+	<link rel="stylesheet" id="fonts-style-css" href="//fonts.googleapis.com/css?family=Lato" type="text/css" media="all">
+	<link rel="stylesheet" href="/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+</head>
+<body>
+
+
+
+	<div class="header_wrapper">
+		<section>
+
+
+
+				<div class="logo">
+					<a href="" title="Drew McKinney"
+
+
+					></a>
+				</div>
+				<div class="title"><a href="/" rel="home">Drew McKinney</a>
+
+
+
+				</div>
+
+
+				<nav class="menu">
+
+
+
+					<ul class="social-icons">
+						<li class="social-icon"><a class="email" href="/contact"></a></li>
+						<li class="social-icon"><a class="dribbble" href="http://www.dribbble.com/drewmck"></a></li>
+						<li class="social-icon"><a class="linkedin" href="http://www.linkedin.com/in/andrewmckinney"></a></li>
+						<li class="social-icon"><a class="twitter" href="http://www.twitter.com/drewmck"></a></li>
+
+
+
+					</ul>
+				</nav>
+
+
+
+			</header>
+		</section>
+	</div>
+
+
+
+
+		<div class="body_wrapper">
+
+
+
+
+				<section>
+
+<h1>Pivotal Tracker Analytics</h1>
+
+
+
+<p>
+<a href="http://www.pivotaltracker.com/help/articles/analytics_charts_and_reports_overview/">Pivotal Tracker Analytics</a> is an Agile project management metrics tool built for <a href="http://www.pivotaltracker.com">Pivotal Tracker</a>. I lead the design of Analytics over the course of many months: starting with user research, progressing with lo-fi designs, and pairing with developers to craft the finished product.
+</p>
+
+<p>
+It is one of the most popular new features on Pivotal Tracker to date despite being a "niche" feature designed for project managers. It enjoys an average long-tail 25% retention rate and thousands of daily users.
+</p>
+
+
+
+
+<h2>Research and findings</h2>
+
+<a href="research 1.png"><img src="research 1.png" /></a>
+
+
+<h3>Who was looking for project analytics?</h3>
+
+<p>Pivotal Tracker had been receiving feedback for some time that our reporting and analytics were lacking. We knew we needed improved analytical tools, but weren't sure how exactly to go about it.</p>
+
+<p>We began by analyzing the requests for customer type. To no surprise, those requesting reporting and analytics tended to be those in a project management or leadership role, and generally from bigger companies and consultancies.</p>
+
+
+
+
+<h3>What were people doing already?</h3>
+
+<a href="research 5.png"><img src="research 5.png" /></a>
+
+
+
+
+<p>To narrow down on what we wanted to build, we spoke to 20 or so PMs. These were PMs both within Pivotal Labs and customers of Tracker.</p>
+
+<p>First, we wanted to know more about what these customers were already doing for their reporting needs. We used a mixture of unstructured interviews and artifact research to learn more. What we learned, particularly from the artifact collection, was that PMs were generally creating reports which contained information on:</p>
+
+<ul>
+<li><b>What their team accomplished</b> for some period of time (iteration, week, month)</li>
+<li>What their team should <b>expect to work on next</b></li>
+<li>Any ongoing <b>roadblocks or impedements</b></li>
+<li><b>Status on major features and releases</b> ("when will we be done?")</li>
+</ul>
+
+
+<h3>How do great PMs measure project success?</h3>
+
+<img src="pace.png" style="margin: auto; display: block;" />
+
+
+
+
+<p>We didn't want to stop at just asking people what they were doing already. It was a great starting point, but didn't address where people <i>desired to go</i> with their project analytics.</p>
+
+<p>We interviewed a number of PMs that we knew had a history of successful agile projects. This included PMs both within and outside of Pivotal, but we focused mostly on Pivotal PMs because we could verify their project history.</p>
+
+<p>From a series of the same interviews as above, plus follow-ups, we were able to create a series of "problem statements" from affinity diagramming. We then created another affinity diagram using these problem statements.</p>
+
+<p>Through all of this distillation, we found a number of common themes that experienced PMs look for in successful projects:</p>
+
+<ul>
+<li><b>Predictability</b> - a team moves along predictably, with consistent velocity, story types, and pace.</li>
+<li><b>Blockers</b> and explicit project impedements - Both a near and long-term concern, experienced PMs look to reduce any story blockers or other project impedements.</li>
+<li><b>Rejections, long running stories</b>, and other implicit project impedements - Trends that PMs look for in combination with other explicit project risks</li>
+</ul>
+
+
+
+
+
+
+<h2>Designs and approach</h2>
+
+<a href="sketches.png"><img src="sketches.png" /></a>
+
+<p>We produced a number of goals from the research. We wanted to support the kinds of reporting that customers were already doing, but we also wanted to be future-looking and provide indicators of any upcoming problems.</p>
+
+<p>To complicate things, we also had to support the charts that we were already using. Many of these were mainstays of Agile project management (like burndown charts) and others were recent creations which became very popular (like cumulative flow diagrams).</p>
+
+<h3>Provide quick view of most important metrics</h3>
+
+<a href="Project report.png"><img src="Project report.png" class="right-flush" style="border: thin solid #CCC"/></a>
+
+<p>We decided to take an "onion approach" using a dashboard as the outter layer, providing more detail as the user progressed. The idea is to provide brief, relevant information up front in a shapshot, and allow users to dig into the details.</p>
+
+<p>
+Any section of a graph could be hovered on to see a dropdown with exact details. Clicking would reveal a larger version of the graph with specific story information.
+</p>
+
+<p>
+All pages share a unified format, with controls (such as time frame, CSV, print options) at the top, and details the further down the page. On any detail page, a section of the chart could be clicked and story details revealed down below.
+</p>
+
+
+
+
+
+
+
+<h4>Present overall project health trends top and center</h4>
+
+<a href="project trends.png"><img src="project trends.png" /></a>
+
+<p>Project health trends cover a number of concerns (namely around predictability) and also provide indicators of any potential problems.</p>
+
+<p>For example, if work suddenly slows down, and cycle time or rejection rate suddenly go up, this could be a signal that something is wrong in the acceptance criteria of stories. It can also showcase inequalities in story work overall, in particular working completely on features in one iteration, and bugs the next.</p>
+
+
+
+<h4>Showcase major feature work and upcoming release progress</h4>
+
+<a href="epics and releases.png"><img src="epics and releases.png" /></a>
+
+<p>After showing project health, another concern of project managers and teams is feature progress. We demonstrate this in two ways:</p>
+
+<ul>
+<li>Release progress - answering the question "how close are we to releasing? What's left?"</li>
+<li>Epic progress - which answer the question "how much do we have left in the features we care about?"</li>
+</ul>
+
+
+<h4>Let teams to dig into the details</h4>
+
+<p>Just as important as showing a snapshot of all progres, we also want people to be able to dig into the details and seeing which stories were completed, blocked, or affecting progress.</p>
+
+<p>In the example of cycle time, if the PM observes a sudden increase in time spent on stories, they can click and zoom in on the chart. This reveals specific story details, including how much time was spent in particular phases of stories. This can help narrow down exactly where the roadblock was in a process.</p>
+
+<a href="Velocity.png"><img src="Velocity.png" class="twocol-image" style="border: thin solid #CCC" /></a>
+<a href="Story Comp.png"><img src="Story Comp.png" class="twocol-image" style="border: thin solid #CCC" /></a>
+<a href="epic report.png"><img src="epic report.png" class="twocol-image" style="border: thin solid #CCC"/></a>
+<a href="Cycle Time.png"><img src="Cycle Time.png" class="twocol-image" style="border: thin solid #CCC"/></a>
+
+
+<h2>Results</h2>
+
+<p>Analytics remains one of the most popular and frequently used Tracker features to date. It enjoys a 20-25% long-tail retention week-over-week (which means about 25% of people who use it once use it again and again).</p>
+
+<p>Tracker receives frequent praise from customers on the feature in addition to various feature requests. A number of larger customers have credited Analytics with keeping them on the platform vs. moving to a competitor.</p>
+
+<img src="retention.png" />
+
+
+
+
+</section>
+
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+---
+layout: default
+title: "Listacular - Andrew McKinney"
+---
+
+<section>
+
+<h1>Listacular</h1>
+
+<blockquote>
+"I love the slick interface for Listacular. It’s minimal, simple, and yet, it’s still elegant."
+<cite>
+<a href="http://appadvice.com/review/quickadvice-listacular-for-dropbox">AppAdvice</a>
+</cite>
+</blockquote>
+
+<blockquote>
+"The beauty of Listacular is in its ability to let you add new notes, lists or to-dos quickly and easily."
+<cite>
+<a href="http://beautifulpixels.com/iphone/listacular-one-app-lists-notes-dos/">Beautiful pixels</a>
+</cite>
+</blockquote> 
+
+<blockquote>
+"Listacular is a new entrant into the fold that brings a beautiful interface, Dropbox syncing, and collaborative list editing to the table, and it's definitely worth a look."
+<cite>
+<a href="http://lifehacker.com/listacular-creates-flexible-to-dos-is-packed-with-gest-509438619">Lifehacker</a>
+</cite>
+</blockquote>
+
+
+<img src="listacular 1.png" class="threecol-image"  />
+<img src="listacular 2.png" class="threecol-image"  />
+<img src="listacular 3.png" class="threecol-image"  />
+
+
+<p>
+<a href="http://www.bloomingsoft.com/listacular">Listacular</a> is a text-based todo list, outliner, note taker, and task manager which syncs with Dropbox. While I started working on Listacular for about two months in 2013 as a side-project and spiritual successor to another app, it's cultish popularity helped blossom it into much more than a side-project since. 
+</p>
+
+<p>
+To this day, Listacular enjoys a 5-star rating on the appstore and has thousands of users despite minimal updates. It has been featured by Lifehacker, Beautify Pixels and App Advice, and is considered to be the successor to TaskPaper.
+</p>
+
+
+
+
+<h2>Listacular originated another from an app called Droplist</h2>
+
+<p>
+Listacular has a history through another app, Droplist, which was created way back in 2011. Before iCloud had been established as Apple's sync platform dujour, Dropbox was really the only way to sync your work across devices. Droplist was a todo list app which synced basic .txt files between the phone and Dropbox. A simple concept, but it turned out to have a big impact in the appstore s a  top-10 paid productivity app ...for a few weeks...
+</p>
+
+<img src="droplist-accolades.png" />
+
+
+<p>While the app was successful, it was poorly written and needed a number of architectural improvements to get it up to snuff. In addition to the technical challenges, a number of customers reported that they felt underserved by the product. I spoke many of these dissastisfied customers to understand more about the apps shortcomings, but also more about who they were and what they cared about.</p>
+
+<h2>Goals for Listacular</h2>
+	
+<p>What I learned from speaking to my customers is that manyh of them could be considered "power users": people who were already pushing the envelope with their apps and process, and were tech-savvy, and generally <strong>valued control over simplicity</strong>. They loved Droplist for it's fast list creation and use of plaintext files. But they wanted more flexibility in their list structure, and would frequently reference another plaintext app called TaskPaper. I felt that my customers wanted:</p>
+
+<ul>
+<li>A greater focus on <strong>rapid outlining and thought-mapping </strong>, not just creating to-do lists, which people were doing already</li>
+<li>Greater <strong>flexibility</strong> in the changing note data to todo items, and back again</li>
+<li>Setting due dates, alerts, and other <strong>relevant metadata</strong> like tagging</li>
+</ul>
+
+<img src="listacular-sketches.png" />
+
+
+
+<h2>Interaction design</h2>
+
+<h3>Rapid list and outline creation</h3>
+
+<video width="272" height="480" class="demo-video" autoplay controls>
+  <source src="./writing-a-new-list-small.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<p>Since a primary focus of Listacular was on <strong>fast and easy list creation</strong>, I wanted the editing experience to be seemless. I did not want users to constantly be creating an item, using the keyboard, hitting "done", and then have to repeat the pattern. I'd rather the user never leave the keyboard if possible.</p>
+
+<p>To accomplish this, new list items could be made by hitting "return" on the keyboard. They would then be immediately editing the next item. On top of this, they could manipulate indentation, item type (todo vs. bullet point vs. plain text), and text formatting (bold/italic) directly from the keyboard.</p>
+
+<p>I also wanted users to be able to <strong>seamlessly indent and outdent items</strong>. This is particularly important for outlining. In Droplist, this was on the list item itself, which turned out to be a really clunky experience. For Listacular, I wanted to make all layout options accessibly via the keyboard.</p>
+
+
+
+<div style="clear: both;">
+
+
+<h3>Low-effort item completion, deletion, reording and due-dating</h3>
+
+<video width="272" height="480" class="demo-video" autoplay controls>
+  <source src="./removing-todos.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<p>Along with rapid list editing, I wanted the non-editing mode to be just as seamless. To do this, I used a number of gestures found in apps like Mailbox and Clear.</p>
+
+<p><strong>Completing (or destroying) a list item</strong> could be accomplished with varying degrees of the same gesture. To check an item, the user would pull the todo item right until the cell became green (to indicate the action would take place on release). To go delete the item altogether, the user would pull the item further right. In this way, the interactions are complementary.</p>
+
+<p><strong>Setting a due date or alert</strong> could be done by pulling the list to the left. Rather than overloading this gesture with multiple actions (such as settings, due date, and a variety of other catchall actions), I decided to only have a single action. For todo items, this meant setting a due date and alert. For lists themselves, this meant list sharing options.
+	
+
+
+
+
+<h2>Results and accolades</h2>
+
+<img src="listacular-appstore.png" />
+
+<p>Listacular was launched to much less fanfare initially, but eventually found a strong niche audience. It received very positive articles from Lifehacker, AppAdvice, and had its own feature on Beautiful Pixels. It continues to be steadily profitable to this day, despite not having the big opening day success with Droplist did.</p>
+
+
+
+
+
+</section>
+
+<script>
+document.getElementsByTagName('video')[0].onended = function () {
+  this.append("controls");
+};
+</script>
