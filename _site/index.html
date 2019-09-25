@@ -25,77 +25,56 @@
 	<title>UX design, product management - Andrew McKinney</title>
 
 	<link rel="stylesheet" id="fonts-style-css" href="//fonts.googleapis.com/css?family=Lato" type="text/css" media="all">
-	<link rel="stylesheet" href="/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="/style-new.scss" type="text/css" media="screen" title="no title" charset="utf-8">
 
 </head>
 <body>
 
 
-
-	<div class="header_wrapper">
-		<section>
+<div class="grid">
 
 
+		<section class="header">
 
 				<div class="logo">
-					<a href="" title="Drew McKinney"
-
-
-					></a>
+					<a href="" title="Drew McKinney"></a>
 				</div>
-				<div class="title"><a href="/" rel="home">Drew McKinney</a>
-
-
-
-				</div>
-
+				<div class="title"><a href="/" rel="home">Drew McKinney</a></div>
 
 				<nav class="menu">
-
-
-
 					<ul class="social-icons">
 						<li class="social-icon"><a class="email" href="/contact"></a></li>
 						<li class="social-icon"><a class="dribbble" href="http://www.dribbble.com/drewmck"></a></li>
 						<li class="social-icon"><a class="linkedin" href="http://www.linkedin.com/in/andrewmckinney"></a></li>
 						<li class="social-icon"><a class="twitter" href="http://www.twitter.com/drewmck"></a></li>
-
-
-
 					</ul>
 				</nav>
 
-
-
-			</header>
 		</section>
-	</div>
 
 
 
-
-		<div class="body_wrapper">
-
-
-
-
-					<section class="bio-in-brief">
-
-				<img src="drew@2x.png" class="bio-pic" />
-
+			<section class="bio-in-brief">
 				<p>I'm a product designer and UI engineer. I live between Boulder and Denver, CO.</p>
-				<p>I work for <a href="https://mep.trimble.com/">Trimble MEP</a> as a Senior UX Designer where I focus on B2B SaaS apps. In a past life, I was a Product Designer and then Product Manager of Growth for <a href="http://www.pivotaltracker.com">Pivotal Tracker</a>. I was also the Senior UX Designer for <a href="http://www.victorops.com">VictorOps</a>. I also created apps like <a href="http://www.bloomingsoft.com/listacular">Listacular</a> and <a href="http://www.piggycalc.io">PiggyCalc</a>.</p>
+				<p>I work for <a href="https://mep.trimble.com/">Trimble MEP</a> as a Senior UX Designer where I focus on B2B SaaS apps. In a past life, I was a Product Designer and then Product Manager of Growth for <a href="http://www.pivotaltracker.com">Pivotal Tracker</a>. I was also the Senior UX Designer for <a href="http://www.victorops.com">VictorOps</a>. I created apps like <a href="http://www.bloomingsoft.com/listacular">Listacular</a> and <a href="http://www.piggycalc.io">PiggyCalc</a>.</p>
 				<p>My work has been featured in <a href="http://lifehacker.com/listacular-creates-flexible-to-dos-is-packed-with-gest-509438619">Life Hacker</a>, <a href="http://beautifulpixels.com/iphone/listacular-one-app-lists-notes-dos/">Beautiful Pixels</a>, <a href="http://appadvice.com/review/quickadvice-listacular-for-dropbox">AppAdvice</a> and <a href="http://fortune.com/2018/06/11/splunk-acquire-software-startup-victorops/">Fortune</a>.</p>
-
 	</section>
+
+	<section class="bio-image">
+		<img src="drew@2x.png"/>
+	</section>
+
 	<section class="lean-ux-explained">
 
+		<div class="content">
+			
 		<p>I use <a href="https://medium.com/@drewmck/lean-ux-is-about-reducing-risk-1d7d505d2881#.9w5r9kxri">Lean UX</a> practices to help teams solve expensive problems. Lean UX is a product discovery and design process which  by validating concepts before implementation.</p>
 
 				<div class="process-block">
 					<img src="process-desktop.svg" class="process-image-desktop" />
 					<img src="process-mobile.svg" class="process-image-mobile" />
-			    </div>
+			  </div>
+		</div>
 
 	</section>
 
@@ -103,11 +82,8 @@
 
 
 
-<section>
+<section class="articles">
 	<h3 class = "section-head">Some of my articles</h3>
-</section>
-
-<section>
 
 
 <ul style="margin-left: 8px;">
@@ -125,11 +101,10 @@
 
 
 
-<section>
+<section class="case-studies">
 	<h3 class = "section-head">Selected case studies</h3>
-</section>
 
-	<section>
+
 
 		<a href="./projects/android-design-system/" class="project-tile" >
 
@@ -168,160 +143,12 @@
 		</a>
 
 
-		<!--
-		<a href="./projects/conferencenav/" class="project-tile" >
 
-			<p class="project-description"><strong>ConferenceNav</strong> - Platform for conference attendees and organizers</p>
-
-			<div class="image-container" style="background-image: -webkit-image-set(url('./projects/conferencenav/preview-background.png') 1x, url('./projects/conferencenav/preview-background@2x.png') 2x);">
-				<img src="./projects/conferencenav/preview.png" />
-
-			</div>
-		</a>
+</section>
 
 
-
-
-
-
-
-
-			<a href="./projects/conferencenav/"><div class="tile">
-
-
-				<div class="image"><img src="./projects/conferencenav/preview.png"></div>
-				<div class="tag">
-					<span class="title">ConferenceNav</span>
-					<span class="description">Mobile tradeshow and conference experience</span>
-				</div>
-			</div></a>
-
-			<a href="./projects/sales-reps-cook/"><div class="tile">
-				<div class="image"><img src="./projects/sales-reps-cook/preview.png"></div>
-				<div class="tag">
-					<span class="title">Sales Rep Tools</span>
-					<span class="description">Timely price and product information for medical device reps.</span>
-				</div>
-			</div></a>
-
-			<a href="./projects/droplist/"><div class="tile">
-				<div class="image"><img src="./projects/droplist/preview.png"></div>
-				<div class="tag">
-					<span class="title">Droplist</span>
-					<span class="description">Intuitive to-do app with dropbox</span>
-				</div>
-			</div></a>
-
-			<a href="./projects/audi-ux-test-factorylabs/"><div class="tile">
-				<div class="image"><img src="./projects/audi-ux-test-factorylabs/preview.png"></div>
-				<div class="tag">
-					<span class="title">Audi UX Revamp</span>
-					<span class="description">Customer-dealer relationship</span>
-				</div>
-			</div></a>
-
-
-
-
-
-			<div class="company-logo">
-				<img src="./resources/imagery/companies/disney-logo.png" />
-			</div>
-
-
-			<a href="./projects/artist-collaboration-disney/"><div class="tile">
-				<div class="image">
-					<img src="./projects/artist-collaboration-disney/preview.png"></div>
-					<div class="tag">
-						<span class="title">Disney Liveshare</span>
-						<span class="description">On-screen remote artist collaboration</span>
-					</div>
-				</div></a>
-
-				<a href="./projects/softweb-disney/"><div class="tile">
-					<div class="image">
-						<img src="./projects/softweb-disney/preview.png"></div>
-						<div class="tag">
-							<span class="title">Disney Softweb</span>
-							<span class="description">Artist/programmer portal</span>
-						</div>
-					</div></a>
-
-
-
-
-					<div class="company-logo">
-						<img src="./resources/imagery/companies/hci-logo.png" />
-					</div>
-
-
-
-
-					<a href="./projects/driving-buddy/"><div class="tile">
-						<div class="image"><img src="./projects/driving-buddy/preview.png"></div>
-						<div class="tag">
-							<span class="title">Drivingbuddy</span>
-							<span class="description">Fix your driving (acquired 2011)</span>
-						</div>
-					</div></a>
-
-					<a href="./projects/rhythmning/"><div class="tile">
-						<div class="image"><img src="./projects/rhythmning/preview.png"></div>
-						<div class="tag">
-							<span class="title">Rhythmning</span>
-							<span class="description">Virtual drum circle</span>
-						</div>
-					</div></a>
-
-					<a href="./projects/ansi-art-book/"><div class="tile">
-						<div class="image"><img src="./projects/ansi-art-book/preview.png"></div>
-						<div class="tag">
-							<span class="title">ANSI Art</span>
-							<span class="description">Courier Type Specimen Book</span>
-						</div>
-					</div></a>
-
-					<a href="./projects/weight-watchers-iphone-app/"><div class="tile">
-						<div class="image"><img src="./projects/weight-watchers-iphone-app/preview.png"></div>
-						<div class="tag">
-							<span class="title">My Buddy's Weight</span>
-							<span class="description">Weight Watchers Buddy App</span>
-						</div>
-					</div></a>
-
-					<a href="./projects/wiimote-whiteboard/"><div class="tile">
-						<div class="image"><img src="./projects/wiimote-whiteboard/preview.png"></div>
-						<div class="tag">
-							<span class="title">Wiimote Whiteboard</span>
-							<span class="description">UX & Feasibility Analysis</span>
-						</div>
-					</div></a>
-
-
-					<div class="company-logo">
-						<img src="./resources/imagery/companies/ink-logo.png" />
-					</div>
-
-					<a href="./projects/craigsmonitor/"><div class="tile">
-						<div class="image"><img src="./projects/craigsmonitor/preview.png"></div>
-						<div class="tag">
-							<span class="title">Craigsmonitor</span>
-							<span class="description">Cragslist alerts for stuff you want</span>
-						</div>
-					</div></a>
-
-					<a href="./projects/pay-owe/"><div class="tile">
-						<div class="image"><img src="./projects/pay-owe/preview.png"></div>
-						<div class="tag">
-							<span class="title">PayOwe</span>
-							<span class="description">Track who owes you $ via Twitter</span>
-						</div>
-					</div></a> -->
-
-				</section>
 
 </div>
-
 
 
 
