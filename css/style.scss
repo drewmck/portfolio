@@ -1,84 +1,151 @@
 ---
 ---
 
+/* variables */
+$grid-unit: 8px;
+$blue-dark: #007FB6;
+$blue-regular: #2BA8DE;
+$blue-light: #5DCAFA;
+
+/*grid variables*/
+$col-layout: auto repeat(8, minmax(0px, $grid-unit*14)) auto;
+$col-layout-inner: repeat(8, minmax(0px, $grid-unit*14));
+
 /* basic formatting */
 
-body {font-size: 20px; font-family: 'Lato'; line-height: 32px;}
+body {font-size: 1rem; font-family: 'Lato'; line-height: $grid-unit*4;}
+
+a {color: $blue-dark; text-decoration: none;}
+a:hover {color: $blue-dark; text-decoration: underline;}
+
 
 strong, b { font-weight: 700; }
 
-h1 {font-size: 32px; font-weight: bold;}
-h2 {font-size: 32px; font-weight: bold;}
-h3 {font-size: 24px; font-weight: 600;}
+h1 {font-size: 2rem; font-weight: bold; margin-top: $grid-unit*4; margin-bottom: $grid-unit*4}
+h2 {font-size: 2rem; font-weight: bold;}
+h3 {font-size: 1.5rem; font-weight: 600;}
 
 h1 a, h2 a { text-decoration: none;}
 
+ul li { list-style: solid-circle; margin-bottom: .5em; }
+ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
+
 /* grid layout */
-
-section{
-  display: block;
-}
-
 .grid {
   display: grid;
-  grid-template-columns: auto repeat(6, minmax(0px, 136px)) auto;
-  grid-gap: 16px;
+  grid-template-columns: $col-layout;
+  grid-gap: $grid-unit*2;
+
+  .header {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    background: pink;
+  }
+
+  .bio-in-brief {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    background: pink;
+
+  }
+
+  .bio-image{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    background: pink;
+  }
+
+  .bio-image img{
+    max-width:100%;
+  }
+
+
+  .lean-ux-explained{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    background: pink;
+
+    display: grid;
+    grid-template-columns: $col-layout;
+    grid-gap: $grid-unit*2;
+
+    .content{
+      grid-column-start: 3;
+      grid-column-end: 9;
+      background: green;
+    }
+  }
+
+  .articles {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    background: pink;
+  }
+
+  .case-studies {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    background: pink;
+
+    display: grid;
+    grid-template-columns: $col-layout;
+    grid-gap: $grid-unit*2;
+
+    h3.section-head{
+      grid-column-start: 3;
+      grid-column-end: 9;
+    }
+
+    .project-tile{
+      grid-column-start: 2;
+      grid-column-end: 10;
+
+      display: grid;
+      grid-template-columns: $col-layout-inner;
+      grid-gap: $grid-unit*2;
+
+      .image-container {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        background: red;
+      }
+
+      .project-description{
+
+        grid-column-start: 2;
+        grid-column-end: 8;
+        background: green;
+
+        .title{
+
+        }
+
+        .summary{
+
+        }
+
+      }
+
+    }
+  }
 }
 
-.grid .test {
-  grid-column-start: 2;
-  grid-column-end: 8;
-  background: green;
-}
+/* header styling */
 
-.grid .header {
-  grid-column-start: 2;
-  grid-column-end: 8;
-  background: pink;
-}
+.header{
 
-.grid .bio-in-brief {
-  grid-column-start: 2;
-  grid-column-end: 6;
-  background: pink;
-}
+  .title {display: inline-block;}
 
-.grid .bio-image{
-  grid-column-start: 6;
-  grid-column-end: 8;
-  background: pink;
-}
+  nav.menu {
+    display: inline-block;
+    float: right;
 
-.grid .bio-image img{
-  max-width:100%;
-}
+    .social-icons {float: right; padding-top: 6px;
+      .social-icon {margin-left: 10px; float: right; list-style: none;
+        a {font-weight: 400; width: 100%; height: 100%; display: block; background-size: inherit;}
+        a:hover {border-bottom: 2px solid #007FB6;}
+      }
+    }
+  }
 
-
-.grid .lean-ux-explained{
-  grid-column-start: 1;
-  grid-column-end: 9;
-  background: pink;
-
-  display: grid;
-  grid-template-columns: auto repeat(6, minmax(0px, 136px)) auto;
-  grid-gap: 16px;
-}
-
-.lean-ux-explained .content{
-
-  grid-column-start: 2;
-  grid-column-end: 8;
-  background: green;
-}
-
-.grid .articles {
-  grid-column-start: 2;
-  grid-column-end: 8;
-  background: pink;
-}
-
-.grid .case-studies {
-  grid-column-start: 2;
-  grid-column-end: 8;
-  background: pink;
 }
