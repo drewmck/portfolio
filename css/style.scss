@@ -18,12 +18,17 @@ $neutral-light-5: #F9FBFD;
 
 
 /*grid variables*/
-$col-layout: auto repeat(8, minmax(0px, $grid-unit*14)) auto;
-$col-layout-inner: repeat(8, minmax(0px, $grid-unit*14));
+$col-width: $grid-unit*15;
+$col-layout: auto minmax(0px, $col-width) repeat(6, $col-width) minmax(0px, $col-width) auto;
+$col-layout-inner: minmax(0px, $col-width) repeat(6, $col-width) minmax(0px, $col-width);
+$grid-gap: 0;
+
+/*$col-layout: auto repeat(8, minmax(0px, $grid-unit*14)) auto;
+$col-layout-inner: repeat(8, minmax(0px, $grid-unit*14));*/
 
 /* basic formatting */
 
-body {color: $neutral-dark; font-size: 1.25rem; font-family: 'Lato'; line-height: $grid-unit*4;}
+body {margin: 0; color: $neutral-dark; font-size: 1.25rem; font-family: 'Lato'; line-height: $grid-unit*4;}
 
 a {color: $blue-dark; text-decoration: none;}
 a:hover {color: $blue-dark; text-decoration: underline;}
@@ -45,7 +50,7 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
 .grid {
   display: grid;
   grid-template-columns: $col-layout;
-  grid-gap: $grid-unit*2;
+  grid-gap: $grid-gap;
 
   section{padding: 32px 0;}
 
@@ -84,7 +89,7 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
 
     display: grid;
     grid-template-columns: $col-layout;
-    grid-gap: $grid-unit*2;
+    grid-gap: $grid-gap;
 
     .content{
       grid-column-start: 3;
@@ -110,7 +115,7 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
 
     display: grid;
     grid-template-columns: $col-layout;
-    grid-gap: $grid-unit*2;
+    grid-gap: $grid-gap;
 
     h3.section-head{
       grid-column-start: 3;
@@ -123,7 +128,7 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
 
       display: grid;
       grid-template-columns: $col-layout-inner;
-      grid-gap: $grid-unit*2;
+      grid-gap: $grid-gap;
 
       .image-container {
         grid-column-start: 1;
