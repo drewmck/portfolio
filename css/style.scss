@@ -18,9 +18,11 @@ $neutral-light-5: #F9FBFD;
 
 
 /*grid variables*/
-$col-width: $grid-unit*15;
+$col-width: $grid-unit*16;
 $col-layout: auto minmax(0px, $col-width) repeat(6, $col-width) minmax(0px, $col-width) auto;
 $col-layout-inner: minmax(0px, $col-width) repeat(6, $col-width) minmax(0px, $col-width);
+$inner-grid-gap: $grid-unit*2;
+$outter-grid-gap: 0;
 $grid-gap: 0;
 
 /*$col-layout: auto repeat(8, minmax(0px, $grid-unit*14)) auto;
@@ -53,7 +55,6 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
   grid-gap: $grid-gap;
 
   section{padding: 32px 0;}
-
   .header {
     grid-column-start: 3;
     grid-column-end: 9;
@@ -62,6 +63,7 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
   }
 
   .bio-in-brief {
+
     grid-column-start: 3;
     grid-column-end: 7;
   }
@@ -77,6 +79,8 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
 
 
   .lean-ux-explained{
+    display: none;
+
     font-size: 1.4rem;
     line-height: 2.5rem;
 
