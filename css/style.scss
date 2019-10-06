@@ -24,6 +24,10 @@ $col-layout-inner: minmax(0px, $col-width) repeat(6, $col-width) minmax(0px, $co
 $inner-grid-gap: $grid-unit*2;
 $outter-grid-gap: 0;
 $grid-gap: 0;
+$gutter: $grid-unit*2;
+
+$section-title-font: 36px 'Lato';
+$content-title-font: 24px 'Lato';
 
 /*$col-layout: auto repeat(8, minmax(0px, $grid-unit*14)) auto;
 $col-layout-inner: repeat(8, minmax(0px, $grid-unit*14));*/
@@ -42,6 +46,7 @@ h1.title {font-size: 1.5rem; margin: 0; font-weight: 800;}
 h1 {font-size: 2rem; font-weight: bold; margin-top: $grid-unit*4; margin-bottom: $grid-unit*4}
 h2 {font-size: 2rem; font-weight: bold;}
 h3 {font-size: 1.4rem; font-weight: 300; line-height: 2.5rem;}
+h3.section-head {font: $section-title-font;};
 
 h1 a, h2 a {color: $neutral-dark; text-decoration: none;}
 
@@ -77,39 +82,47 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
     max-width:100%;
   }
 
-
-  .lean-ux-explained{
-    display: none;
-
-    font-size: 1.4rem;
-    line-height: 2.5rem;
-
-    background: $neutral-light-5;
-    border-top: thin solid $neutral-light-4;
-    border-bottom: thin solid $neutral-light-4;
-
-    grid-column-start: 1;
-    grid-column-end: 11;
-
-    display: grid;
-    grid-template-columns: $col-layout;
-    grid-gap: $grid-gap;
-
-    .content{
-      grid-column-start: 3;
-      grid-column-end: 9;
-    }
-
-    .process-image{
-      margin: auto;
-      display: block;
-    }
-  }
-
   .articles {
     grid-column-start: 3;
     grid-column-end: 9;
 
+    ul.articles-list{
+
+      padding-left: 0;
+
+      li {
+        display: block;
+        height: $grid-unit * 7;
+        margin-bottom: $grid-unit * 2;
+        font: $content-title-font;
+
+        a{
+          display: block;
+          height: 100%;
+          vertical-align: middle;
+
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+
+        img {
+          display: inline-block;
+          width: $grid-unit*5;
+          margin-right: $grid-unit*3;
+
+        }
+
+        span{
+          display: inline-block;
+          vertical-align: middle;
+          height: 100%;
+          line-height: $grid-unit*3;
+          text-decoration: inherit;
+        }
+      }
+
+    }
   }
 
   .case-studies {
