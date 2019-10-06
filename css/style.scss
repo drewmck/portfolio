@@ -26,8 +26,13 @@ $outter-grid-gap: 0;
 $grid-gap: 0;
 $gutter: $grid-unit*2;
 
+/* Font specifics */
+$brand-font: 28px 600 'Lato';
 $section-title-font: 36px 'Lato';
 $content-title-font: 24px 'Lato';
+$large-content-font: 24px/40px 'Lato';
+$regular-content-font: 20px/32px 'Lato';
+$menu-item-font: 16px 500 'Lato';
 
 /*$col-layout: auto repeat(8, minmax(0px, $grid-unit*14)) auto;
 $col-layout-inner: repeat(8, minmax(0px, $grid-unit*14));*/
@@ -86,6 +91,10 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
     grid-column-start: 3;
     grid-column-end: 9;
 
+    p.description {
+      font: $large-content-font;
+    }
+
     ul.articles-list{
 
       padding-left: 0;
@@ -94,7 +103,7 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
         display: block;
         height: $grid-unit * 7;
         margin-bottom: $grid-unit * 2;
-        font: $content-title-font;
+        font: $large-content-font;
 
         a{
           display: block;
