@@ -2,3 +2,4 @@
 .sass-cache
 .DS_Store
 .ruby-version
+resources/.DS_Store
