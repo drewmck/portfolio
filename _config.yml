@@ -17,7 +17,7 @@ category_dir: /
 # Uncomment if you are planning to run the blog in a subdirectory
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
 # Example, you must use http://localhost:4000/path/to/blog
-#baseurl: /path/to/blog 
+#baseurl: /path/to/blog
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 url: http://www.andrewmckinney.com/
@@ -29,7 +29,7 @@ url: http://www.andrewmckinney.com/
 # Use rdiscount as the markdown engine because it generates html5 compliant code for stuff like footnotes
 # If you use maroku (default engine) some of your generated pages may not validate or lint as html5
 # If you don't have it install it via gem install rdiscount
-markdown: rdiscount
+markdown: kramdown
 
 # Continue compiling even if there are errors. Keep it true, unless troubleshooting.
 auto: true
@@ -38,4 +38,4 @@ auto: true
 permalink: pretty
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: README.markdown
+exclude: [README.markdown]
