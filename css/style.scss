@@ -28,7 +28,7 @@ $col-layout-inner: minmax(0px, $col-width) repeat(6,$col-width) minmax(0px, $col
 
 /* Font specifics */
 $brand-font: 28px 600 'Lato';
-$section-title-font: 36px 'Lato';
+$section-title-font: bold 36px 'Lato';
 $content-title-font: bold 24px/32px 'Lato';
 $large-content-font: 24px/40px 'Lato';
 $regular-content-font: 20px/32px 'Lato';
@@ -51,7 +51,7 @@ h1.title {font-size: 1.5rem; margin: 0; font-weight: 800;}
 h1 {font-size: 2rem; font-weight: bold; margin-top: $grid-unit*4; margin-bottom: $grid-unit*4}
 h2 {font-size: 2rem; font-weight: bold;}
 h3 {font-size: 1.4rem; font-weight: 300; line-height: 2.5rem;}
-h3.section-head {font: $section-title-font;};
+.section-head h3 {display: inline-block; font: $section-title-font; border-bottom: 4px solid $blue-light; padding-bottom: $grid-unit;};
 
 h1 a, h2 a {color: $neutral-dark; text-decoration: none;}
 
@@ -143,10 +143,12 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
     grid-template-columns: $col-layout-outter;
     grid-gap: $grid-gap;
 
-    h3.section-head{
+
+    .section-head{
       grid-column-start: 3;
       grid-column-end: 9;
     }
+
 
     .project-tile{
       grid-column-start: 2;
@@ -155,6 +157,8 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
       display: grid;
       grid-template-columns: $col-layout-inner;
       grid-gap: $grid-gap;
+
+      margin-bottom: $grid-unit * 8;
 
       .image-container {
         grid-column-start: 1;
