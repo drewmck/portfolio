@@ -18,8 +18,8 @@ $neutral-light-5: #F9FBFD;
 
 
 /*grid variables*/
-$grid-gap: $grid-unit;
-$col-width: $grid-unit*16;
+$grid-gap: $grid-unit*2;
+$col-width: $grid-unit*14;
 
 /* grid layout */
 $col-layout-outter: auto minmax(0px, $col-width) repeat(6, $col-width) minmax(0px, $col-width) auto;
@@ -47,7 +47,7 @@ a:hover {color: $blue-dark; text-decoration: underline;}
 
 strong, b { font-weight: 700; }
 
-h1.title {font-size: 1.5rem; margin: 0; font-weight: 800;}
+h1.title {font-size: 1.75rem; margin: 0; font-weight: 800;}
 h1 {font-size: 2rem; font-weight: bold; margin-top: $grid-unit*4; margin-bottom: $grid-unit*4}
 h2 {font-size: 2rem; font-weight: bold;}
 h3 {font-size: 1.4rem; font-weight: 300; line-height: 2.5rem;}
@@ -71,6 +71,8 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
     grid-column-end: 9;
 
     padding: $grid-unit*3 0 0 0;
+    margin-top: $grid-unit*10;
+    margin-bottom: $grid-unit*4;
   }
 
   .bio-in-brief {
