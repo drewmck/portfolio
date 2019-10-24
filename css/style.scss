@@ -6,6 +6,7 @@ $grid-unit: 8px;
 $blue-dark: #007FB6;
 $blue-regular: #2BA8DE;
 $blue-light: #5DCAFA;
+$blue-light-2: #C9EEFD;
 
 $neutral-dark-2: #06202F;
 $neutral-dark: #193044;
@@ -15,6 +16,10 @@ $neutral-light-2: #7F90A0;
 $neutral-light-3: #B7C4CF;
 $neutral-light-4: #EAEEF3;
 $neutral-light-5: #F9FBFD;
+
+/* special colors */
+$orange-light: #FEEFD9;
+$orange: #FBB040;
 
 
 /*grid variables*/
@@ -28,7 +33,7 @@ $col-layout-inner: minmax(0px, $col-width) repeat(6,$col-width) minmax(0px, $col
 
 /* Font specifics */
 $brand-font: 28px 600 'Lato';
-$section-title-font: bold 36px 'Lato';
+$section-title-font: bold 28px 'Lato';
 $content-title-font: bold 24px/32px 'Lato';
 $large-content-font: 24px/40px 'Lato';
 $regular-content-font: 20px/32px 'Lato';
@@ -70,6 +75,7 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
     .description{
       margin-bottom: 8*$grid-unit;
       margin-top: 1*$grid-unit;
+      font: $large-content-font;
     }
   }
 
@@ -165,6 +171,10 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
       font: $large-content-font;
     }
 
+    p.more-link{
+      font-style: italic;
+    }
+
     ul.articles-list{
 
       padding-left: 0;
@@ -227,10 +237,29 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
 
       margin-bottom: $grid-unit * 8;
 
-      .image-container {
+      .project-image-link {
         grid-column-start: 1;
         grid-column-end: 9;
-        background: red;
+
+        text-align:center;
+
+        &.victorops-android{
+          background: $orange-light;
+        }
+
+        &.victorops-onboarding{
+          background: $orange-light;
+        }
+
+
+        &.pivotal-tracker-analytics{
+          background: $blue-light-2;
+        }
+
+        &.listacular{
+          background: $blue-light-2;
+        }
+
       }
 
       .project-description{
@@ -245,6 +274,7 @@ ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
 
         .project-summary{
           font: $regular-content-font;
+          color: $neutral-light-2;
         }
       }
     }
