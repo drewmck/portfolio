@@ -9,5 +9,4 @@ baseurl:             /
 #
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          _scss
   style:            :compressed
