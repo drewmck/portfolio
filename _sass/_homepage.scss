@@ -1,0 +1,133 @@
+/*  bio sections */
+
+@import 'variables';
+@import 'typography';
+
+.bio-in-brief {
+
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+.bio-image{
+  grid-column-start: 7;
+  grid-column-end: 9;
+
+  img{ max-width:100%; }
+}
+
+
+/* articles section */
+.articles {
+
+  p{
+    font: $large-content-font;
+  }
+
+  p.more-link{
+    font-style: italic;
+  }
+
+  ul.articles-list{
+
+    padding-left: 0;
+
+    li {
+      display: block;
+      height: $grid-unit * 7;
+      margin-bottom: $grid-unit * 2;
+      font: $large-content-font;
+
+      a{
+        display: block;
+        height: 100%;
+        vertical-align: middle;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+
+      img {
+        display: inline-block;
+        width: $grid-unit*5;
+        margin-right: $grid-unit*3;
+
+      }
+
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        line-height: $grid-unit*3;
+        text-decoration: inherit;
+      }
+    }
+
+  }
+}
+
+.case-studies {
+  grid-column-start: 1;
+  grid-column-end: 11;
+
+  display: grid;
+  grid-template-columns: $col-layout-outter;
+  grid-gap: $grid-gap;
+
+  .section-title{
+    grid-column-start: 3;
+    grid-column-end: 9;
+  }
+
+  .project-tile{
+    grid-column-start: 2;
+    grid-column-end: 10;
+
+    display: grid;
+    grid-template-columns: $col-layout-inner;
+    grid-gap: $grid-gap;
+
+    margin-bottom: $grid-unit * 8;
+
+    .project-image-link {
+      grid-column-start: 1;
+      grid-column-end: 9;
+
+      text-align:center;
+
+      &.victorops-android{
+        background: $orange-light;
+      }
+
+      &.victorops-onboarding{
+        background: $orange-light;
+      }
+
+
+      &.pivotal-tracker-analytics{
+        background: $blue-light-2;
+      }
+
+      &.listacular{
+        background: $blue-light-2;
+      }
+
+    }
+
+    .project-description{
+
+      grid-column-start: 2;
+      grid-column-end: 8;
+
+      .project-title{
+        font: $content-title-font;
+        margin-bottom: $grid-unit;
+      }
+
+      .project-summary{
+        font: $regular-content-font;
+        color: $neutral-light-2;
+      }
+    }
+  }
+}

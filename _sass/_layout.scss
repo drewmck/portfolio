@@ -8,3 +8,36 @@ $col-width: $grid-unit*14;
 $col-minmax-var: minmax(0px, $col-width);
 $col-layout-outter: auto $col-minmax-var repeat(6, $col-width) $col-minmax-var auto;
 $col-layout-inner: $col-minmax-var repeat(6,$col-width) $col-minmax-var;
+
+/* grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: $col-layout-outter;
+  grid-gap: $grid-gap;
+}
+
+//General section gridding
+section{
+  padding: $grid-unit*4 0;
+  grid-column-start: 3;
+  grid-column-end: 9;
+
+  .description{
+    margin-bottom: 8*$grid-unit;
+    margin-top: 1*$grid-unit;
+    font: $large-content-font;
+  }
+
+  //Homepage-specific section
+  .section-title h3 {
+    display: inline-block;
+    font: $section-title-font;
+    border-bottom: 4px solid $blue-light;
+    padding-bottom: 2px;
+
+    a{
+      color: $neutral-dark;
+      pointer-events: none;
+    }
+  }
+}
