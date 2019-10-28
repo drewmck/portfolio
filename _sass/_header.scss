@@ -1,11 +1,10 @@
 @import 'variables';
 @import 'typography';
-
-
+@import 'layout';
 
 .header {
-  grid-column-start: 3;
-  grid-column-end: 9;
+
+  @include standard-content-layout;
 
   padding: $grid-unit*3 0 0 0;
   margin-top: $grid-unit*2;

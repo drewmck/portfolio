@@ -1,8 +1,9 @@
-  /* wrapper for content page articles */
+@import 'layout';
+
+/* wrapper for content page articles */
 
 article{
-  grid-column-start: 3;
-  grid-column-end: 9;
+  @include standard-content-layout;
 
   img {width: 100%;}
 }

@@ -6,38 +6,74 @@ $col-width: $grid-unit*14;
 
 /* grid layout */
 $col-minmax-var: minmax(0px, $col-width);
+
+/* temporary for testing */
 $col-layout-outter: auto $col-minmax-var repeat(6, $col-width) $col-minmax-var auto;
-$col-layout-inner: $col-minmax-var repeat(6,$col-width) $col-minmax-var;
+
+/* desktop variables */
+$col-layout-outter-large: auto $col-minmax-var repeat(6, $col-width) $col-minmax-var auto;
+
+/* tablet and below grid variables */
+$col-layout-outter-small: repeat(6, $col-minmax-var);
+
+
+/* grid templates */
+
+@mixin grid-template {
+
+  display: grid;
+  grid-gap: $grid-gap;
+
+  grid-template-columns: $col-layout-outter-small;
+
+  @media only screen and (min-width: 800px) {
+    grid-template-columns: $col-layout-outter-large;
+  }
+}
+
+/* content layouts */
+
+@mixin standard-content-layout{
+
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+  @media only screen and (min-width: 800px) {
+    grid-column-start: 3;
+    grid-column-end: 9;
+  }
+}
+
+@mixin wide-content-layout{
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+  @media only screen and (min-width: 800px) {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+}
+
+@mixin full-content-layout{
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+  @media only screen and (min-width: 800px) {
+    grid-column-start: 1;
+    grid-column-end: 11;
+  }
+}
+
 
 /* grid layout */
 .grid {
   display: grid;
-  grid-template-columns: $col-layout-outter;
   grid-gap: $grid-gap;
+  @include grid-template;
 }
 
 //General section gridding
 section{
   padding: $grid-unit*4 0;
-  grid-column-start: 3;
-  grid-column-end: 9;
-
-  .description{
-    margin-bottom: 8*$grid-unit;
-    margin-top: 1*$grid-unit;
-    font: $large-content-font;
-  }
-
-  //Homepage-specific section
-  .section-title h3 {
-    display: inline-block;
-    font: $section-title-font;
-    border-bottom: 4px solid $blue-light;
-    padding-bottom: 2px;
-
-    a{
-      color: $neutral-dark;
-      pointer-events: none;
-    }
-  }
+  @include standard-content-layout;
 }

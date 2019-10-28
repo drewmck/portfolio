@@ -5,16 +5,48 @@
 
 .bio-in-brief {
 
-  grid-column-start: 3;
-  grid-column-end: 7;
+  @include standard-content-layout;
+
+  @media only screen and (min-width: 800px) {
+    grid-column-start: 3;
+    grid-column-end: 7;
+  }
 }
 .bio-image{
-  grid-column-start: 7;
-  grid-column-end: 9;
+
+  display: none;
+
+  @media only screen and (min-width: 800px) {
+    display: block;
+    grid-column-start: 7;
+    grid-column-end: 9;
+  }
 
   img{ max-width:100%; }
 }
 
+
+//Homepage section specifics
+section {
+
+  .section-title h3 {
+    display: inline-block;
+    font: $section-title-font;
+    border-bottom: 4px solid $blue-light;
+    padding-bottom: 2px;
+
+    a{
+      color: $neutral-dark;
+      pointer-events: none;
+    }
+  }
+
+  .description{
+    margin-bottom: 8*$grid-unit;
+    margin-top: 1*$grid-unit;
+    font: $large-content-font;
+  }
+}
 
 /* articles section */
 .articles {
@@ -67,31 +99,21 @@
 }
 
 .case-studies {
-  grid-column-start: 1;
-  grid-column-end: 11;
-
-  display: grid;
-  grid-template-columns: $col-layout-outter;
-  grid-gap: $grid-gap;
+  @include full-content-layout;
+  @include grid-template;
 
   .section-title{
-    grid-column-start: 3;
-    grid-column-end: 9;
+    @include standard-content-layout;
   }
 
   .project-tile{
-    grid-column-start: 2;
-    grid-column-end: 10;
-
-    display: grid;
-    grid-template-columns: $col-layout-inner;
-    grid-gap: $grid-gap;
+    @include full-content-layout;
+    @include grid-template;
 
     margin-bottom: $grid-unit * 8;
 
     .project-image-link {
-      grid-column-start: 1;
-      grid-column-end: 9;
+      @include wide-content-layout;
 
       text-align:center;
 
@@ -116,8 +138,7 @@
 
     .project-description{
 
-      grid-column-start: 2;
-      grid-column-end: 8;
+      @include standard-content-layout;
 
       .project-title{
         font: $content-title-font;

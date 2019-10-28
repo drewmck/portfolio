@@ -7,11 +7,3 @@
 @import 'header';
 @import 'homepage';
 @import 'article.scss';
-
-
-/* grid layout */
-.grid {
-  display: grid;
-  grid-template-columns: $col-layout-outter;
-  grid-gap: $grid-gap;
-}
