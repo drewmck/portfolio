@@ -1,11 +1,8 @@
 
 /* variables */
 $grid-unit: 8px;
-$blue-dark: #007FB6;
-$blue-regular: #2BA8DE;
-$blue-light: #5DCAFA;
-$blue-light-2: #C9EEFD;
 
+/* neutrals */
 $neutral-dark-2: #06202F;
 $neutral-dark: #193044;
 $neutral: #3B5060;
@@ -15,14 +12,12 @@ $neutral-light-3: #B7C4CF;
 $neutral-light-4: #EAEEF3;
 $neutral-light-5: #F9FBFD;
 
-/* special colors */
+/* blues */
+$blue-dark: #007FB6;
+$blue-regular: #2BA8DE;
+$blue-light: #5DCAFA;
+$blue-light-2: #C9EEFD;
+
+/* orange */
 $orange-light: #FEEFD9;
 $orange: #FBB040;
-
-/* Font  */
-$brand-font: 28px 600 'Lato';
-$section-title-font: bold 28px 'Lato';
-$content-title-font: normal 28px/32px 'Lato';
-$large-content-font: 24px/40px 'Lato';
-$regular-content-font: 20px/32px 'Lato';
-$menu-item-font: 500 16px 'Lato';

@@ -15,16 +15,11 @@
 <body>
 
 
-<div class="grid">
+<main>
 
-
-		<section class="header">
-
-
+		<header>
 
 				<nav>
-
-
 
 					<div class="menu-container">
 						<h1 class="title"><a href="/" rel="home">Drew McKinney</a></h1>
@@ -42,13 +37,13 @@
 					</ul>
 				</nav>
 
-		</section>
+		</header>
 
 
 
 			<section class="bio-in-brief">
 				<h3>I’m a product designer (UX/UI) from Boulder, Colorado.</h3>
-				<h3>I lead UX Design for <a href="https://mep.trimble.com/">Trimble MEP</a>. In the past I’ve worked for <a href="http://www.splunk.com">VictorOps (now Splunk)</a> and <a href="http://www.splunk.com">Pivotal</a> as a UX Designer and Project Manager.</h3>
+				<h3>I lead UX Design for <a href="https://mep.trimble.com/">Trimble MEP</a>. In the past I’ve worked for <a href="http://www.victorops.com">VictorOps</a> (now a part of Splunk) and <a href="http://www.splunk.com">Pivotal</a> as a UX Designer and Project Manager.</h3>
 
 	</section>
 
@@ -65,7 +60,6 @@
 	<div class="section-title">
 		<h3><a name="articles">Articles</a></h3>
 		<p class="description">I write about various design and product topics. In the past I wrote for Slack and Pivotal Tracker’s blogs.</p>
-
 	</div>
 
 <ul class="articles-list">
@@ -95,7 +89,7 @@
 
 		<div class="project-description">
 			<h4 class="project-title">Pivotal Tracker Analytics</h4>
-			<p class="project-summary">Mobile style system</p>
+			<p class="project-summary">Tracker is an Agile project management tool for software teams. We created a versitile platform to allow users to understand and act on their project data.</p>
 		</div>
 
 		<a href="./projects/pivotal-tracker-analytics/" class="project-image-link pivotal-tracker-analytics" >
@@ -107,7 +101,7 @@
 
 		<div class="project-description">
 			<h4 class="project-title">VictorOps Android</h4>
-			<p class="project-summary">I led design on the VictorOps Android app. Since VictorOps is an on-call solution, mobile is very important to their business strategy.</p>
+			<p class="project-summary">VictorOps is an on-call solution and mobile is very important to their business strategy. I led design on the refresh of VictorOps Android app.</p>
 		</div>
 
 		<a href="./projects/android-design-system/" class="project-image-link victorops-android" >
@@ -119,7 +113,7 @@
 
 		<div class="project-description">
 			<h4 class="project-title">VictorOps Onboarding</h4>
-			<p class="project-summary">Mobile style system</p>
+			<p class="project-summary">Getting users comfortable with a new tool is a challenge for any team. At VictorOps, we completely reimagined the way we approached onboarding.</p>
 		</div>
 
 		<a href="./projects/onboarding-that-sells/" class="project-image-link victorops-onboarding" >
@@ -144,8 +138,42 @@
 </section>
 
 
+<section>
 
-</div>
+	<div class="section-title">
+		<h3><a name="articles">Contact me</a></h3>
+		<p class="description">Let's get in touch. If you're in the Boulder/Denver area, I'm 100% open to grabbing a ☕️ to chat.</p>
+	</div>
+
+	<form action="http://formspree.io/drew@bloomingsoft.com" method="post" class="contact-form">
+
+		<div class="form-body">
+
+			<input type=hidden name="redirect" value="http://work.andrewmckinney.com/contact-thanks/">
+			<input type=hidden name="recipient" value="drew@bloomingsoft.com">
+
+
+			<p>Your email address:
+				<input class="emailAddress" value="" id="email" name="email" ></input>
+			</p>
+
+			<p>Subject:<input class="subject" value="" id="subject" name="subject" ></input>
+			</p>
+
+			<p>Message:
+				<textarea name="comment" rows="5" id="comment" class="bodytext"></textarea>
+			</p>
+
+			<input type="submit" name="Submit" value="Submit" id="submit" name="submit">
+
+		</div>
+	</form>
+
+</section>
+
+
+
+</main>
 
 
 
