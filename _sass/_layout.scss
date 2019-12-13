@@ -69,6 +69,8 @@ main {
   display: grid;
   grid-gap: $grid-gap;
   @include grid-template;
+
+  margin: 0 $grid-unit*3 ;
 }
 
 //General section gridding

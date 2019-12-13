@@ -11,6 +11,11 @@
     grid-column-start: 3;
     grid-column-end: 7;
   }
+
+  h3{
+    margin-top: 0px;
+    font: $hello-message-font;
+  }
 }
 .bio-image{
 
@@ -28,23 +33,29 @@
 
 //Homepage section specifics
 section {
-  
-  .section-title h3 {
-    display: inline-block;
-    font: $section-title-font;
-    border-bottom: 4px solid $blue-light;
-    padding-bottom: 2px;
 
-    a{
-      color: $neutral-dark;
-      pointer-events: none;
+  .section-title{
+    margin-bottom: 4*$grid-unit;
+
+    h3 {
+      display: inline-block;
+      font: $section-title-font;
+      border-bottom: 4px solid $blue-light;
+      padding-bottom: 2px;
+      margin-bottom: $grid-unit;
+
+      /* anchor styling */
+      a{
+        color: $neutral-dark;
+        pointer-events: none;
+      }
     }
-  }
 
-  .description{
-    margin-bottom: 8*$grid-unit;
-    margin-top: 1*$grid-unit;
-    font: $large-content-font;
+    .description{
+      margin-bottom: 0*$grid-unit;
+      margin-top: 2*$grid-unit;
+      font: $large-content-font;
+    }
   }
 }
 
@@ -125,7 +136,6 @@ section {
         background: $orange-light;
       }
 
-
       &.pivotal-tracker-analytics{
         background: $blue-light-2;
       }
@@ -143,12 +153,47 @@ section {
       .project-title{
         font: $content-title-font;
         margin-bottom: $grid-unit;
+        margin-top: $grid-unit;
       }
 
       .project-summary{
-        font: $regular-content-font;
-        color: $neutral-light-2;
+        margin: 0;
+        font: $light-content-font;
+        opacity: .5;
       }
     }
   }
 }
+
+// .contact {
+//   @include full-content-layout;
+//   @include grid-template;
+//
+//   .section-title{
+//     @include standard-content-layout;
+//   }
+//
+//   form{
+//     @include full-content-layout;
+//     @include grid-template;
+//
+//     input {
+//       @include standard-content-layout;
+//
+//       &[type=submit]{
+//         grid-column-start: 7;
+//         grid-column-end: 9;
+//       }
+//     }
+//     p {
+//       margin-top: 0px;
+//       margin-bottom: $grid-unit;
+//       grid-column-start: 3;
+//       grid-column-end: 7;
+//
+//       &.message-field{
+//         @include standard-content-layout;
+//       }
+//     }
+//   }
+// }

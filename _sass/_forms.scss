@@ -1,12 +1,6 @@
 @import 'variables';
 @import 'typography';
 
-button, input[type=submit] { background: #17191a; color: #fff; padding: 10px 30px; font-weight: 700; margin-bottom: 5px; width: 100%; transition: background .2s; cursor: pointer; border: none;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-khtml-border-radius: 5px;
-	border-radius: 5px;
-}
 
 button, input[type=submit]:hover {background: $blue-dark;}
 button.button { border: none; }
@@ -16,24 +10,22 @@ button.button { border: none; }
 :-ms-input-placeholder { color: $neutral-light-4; }
 
 input, textarea {
-  font: $content-title-font;
+  font: $regular-content-font;
   display: block;
-  border: 1px solid $neutral-light-4;
-  padding: $grid-unit;
+  border: thin solid $neutral-light-3;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: $grid-unit;
   width: 100%;
-  transition: border .2s;
   text-decoration: none;
 }
 
-// input:focus, input:hover, textarea:focus, textarea:hover {
-//   border: thin solid $neutral-light;
-// }
-
 input[type=submit] {
   width: 100%;
-  height: $grid-unit*5;
   background: $blue-regular;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  color: #fff;
 }

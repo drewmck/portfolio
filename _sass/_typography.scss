@@ -1,26 +1,32 @@
 @import 'variables';
 
+/* Font  */
+$brand-font: bold 28px 'Lato';
+$menu-item-font: 500 16px 'Lato';
+$hello-message-font: 24px/36px 'Lato';
+
+$section-title-font: bold 24px/36px 'Lato';
+$content-title-font: bold 20px/28px 'Lato';
+$large-content-font: 20px/28px 'Lato';
+$regular-content-font: 20px/28px 'Lato';
+$light-content-font: 500 20px/28px 'Lato';
+
+
 body {margin: 0; color: $neutral-dark; font-size: 1.25rem; font-family: 'Lato'; line-height: $grid-unit*4;}
 
 a {color: $blue-dark; text-decoration: none;}
 a:hover {color: $blue-dark; text-decoration: underline;}
+
+p {font: $regular-content-font;}
 
 strong, b { font-weight: 700; }
 
 h1.title {font-size: 1.75rem; margin: 0; font-weight: 500;}
 h1 {font-size: 2rem; font-weight: 700; margin-top: $grid-unit*4; margin-bottom: $grid-unit*4}
 h2 {font-size: 2rem; font-weight: 700;}
-h3 {font-size: 1.4rem; font-weight: 500; line-height: 2.5rem;}
+h3 {font: $section-title-font;}
 
 h1 a, h2 a {color: $neutral-dark; text-decoration: none;}
 
 ul li { list-style: solid-circle; margin-bottom: .5em; }
 ol li { list-style: decimal-leading-zero; margin-bottom: .5em; }
-
-/* Font  */
-$brand-font: 28px 600 'Lato';
-$section-title-font: bold 24px 'Lato';
-$content-title-font: normal 24px/32px 'Lato';
-$large-content-font: 24px/40px 'Lato';
-$regular-content-font: 20px/32px 'Lato';
-$menu-item-font: 500 16px 'Lato';
