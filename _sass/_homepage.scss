@@ -80,7 +80,7 @@ section {
 
       img.article-preview{
         display: inline-block;
-        width: $grid-unit*12;
+        width: $grid-unit*14;
         margin-right: $grid-unit*4;
       }
 
@@ -93,6 +93,7 @@ section {
             color: $neutral-dark;
           }
           .article-description{
+            font: $regular-content-font;
             color: $neutral-light-2;
             display: block;
           }
