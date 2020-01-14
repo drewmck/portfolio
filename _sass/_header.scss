@@ -23,23 +23,23 @@ header {
 
     .menu-container{
       vertical-align: middle;
-      width: $grid-unit *60;
       display: block;
       float: left;
 
-      .title {
-        display: inline;
-        font: $brand-font;
-      }
+
 
       ul.menu{
-        display: inline;
-        padding-left: $grid-unit * 6;
+        padding-left: 0;
         vertical-align: top;
 
-        li.menu-item{
-          margin-left: $grid-unit * 4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        li{
           display: inline;
+
 
           a {
             font: $menu-item-font;
@@ -47,15 +47,32 @@ header {
           }
         }
 
-        li.menu-item:first-child{
+        li:first-child{
           margin-left: 0px;
         }
+
+        li.title a{
+            font: $brand-font;
+        }
+
+        li.menu-item{
+          display: none;
+        }
+
+        @media only screen and (min-width: 800px) {
+          li.menu-item {
+            display: block;
+            margin-left: 40px;
+          }
+        }
+
       }
     }
 
 
     ul.social-icons {
       margin-top: $grid-unit;
+      padding-left: 0px;
       float: right;
 
         li.social-icon {
