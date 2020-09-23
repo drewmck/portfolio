@@ -1,9 +1,27 @@
 @import 'layout';
+@import 'variables';
 
 /* wrapper for content page articles */
 
 article{
-  @include standard-content-layout;
+
+  @include full-content-layout;
+  @include grid-template;
+
+  margin-bottom: $grid-unit * 8;
+
+  section{
+    @include standard-content-layout;
+  }
+
+  .full-width-section {
+    @include full-content-layout;
+
+    margin-top: -1*$grid-unit*5;
+    padding-top: 0;
+
+    text-align:center;
+  }
 
   img {width: 100%;}
 }

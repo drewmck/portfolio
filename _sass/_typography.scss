@@ -1,18 +1,18 @@
 @import 'variables';
 
 /* Font  */
-$brand-font: 700 28px 'Lato';
-$menu-item-font: 700 16px 'Lato';
-$hello-message-font: 400 24px/40px 'Lato';
+$brand-font: 500 28px 'Source Sans Pro';
+$menu-item-font: 400 24px 'Source Sans Pro';
+$hello-message-font: 400 32px/40px 'Source Sans Pro';
 
-$section-title-font: 700 28px/40px 'Lato';
-$content-title-font: 700 24px/36px 'Lato';
-$large-content-font: 400 24px/36px 'Lato';
-$regular-content-font: 400 20px/32px 'Lato';
-$light-content-font: 400 20px/32px 'Lato';
+$section-title-font: 700 28px/40px 'Source Sans Pro';
+$content-title-font: 700 24px/36px 'Source Sans Pro';
+$large-content-font: 400 24px/36px 'Source Sans Pro';
+$regular-content-font: 400 32px/32px 'Source Sans Pro';
+$light-content-font: 400 20px/32px 'Source Sans Pro';
 
 
-body {margin: 0; color: $neutral-dark; font-size: 1.25rem; font-family: 'Lato'; line-height: $grid-unit*4;}
+body {margin: 0; color: $neutral-dark; font-size: 1.25rem; font-family: 'Source Sans Pro'; line-height: $grid-unit*4;}
 
 a {color: $blue-dark; text-decoration: none;}
 a:hover {color: $blue-dark; text-decoration: underline;}

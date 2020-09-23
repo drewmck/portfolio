@@ -8,12 +8,18 @@
   @include standard-content-layout;
 
   @media only screen and (min-width: 800px) {
-    grid-column-start: 3;
-    grid-column-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 5;
   }
 
+  height: 80vh;
+  position: relative;
+  padding: 0;
+
   h3{
-    margin-top: 0px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
     font: $hello-message-font;
   }
 
@@ -24,14 +30,21 @@
 .bio-image{
 
   display: none;
+  position: relative;
+  padding: 0;
 
   @media only screen and (min-width: 800px) {
     display: block;
-    grid-column-start: 7;
-    grid-column-end: 9;
+    grid-column-start: 6;
+    grid-column-end: 10;
   }
 
-  img{ max-width:100%; }
+  img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width:100%;
+  }
 }
 
 
@@ -120,7 +133,7 @@ section {
   }
 
   .project-tile{
-    @include full-content-layout;
+    @include wide-content-layout;
     @include grid-template;
 
     margin-bottom: $grid-unit * 8;
@@ -128,7 +141,15 @@ section {
     .project-image-link {
       @include wide-content-layout;
 
-      text-align:center;
+      & img{
+        width: 100%;
+
+        @media only screen and (min-width: 800px) {
+          display: block;
+          width: auto;
+          margin: auto;
+        }
+      }
 
       &.victorops-android{
         background: $orange-light;
