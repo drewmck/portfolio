@@ -75,6 +75,53 @@ section {
   }
 }
 
+/* my work */
+.my-work{
+  background: red;
+  @include full-content-layout;
+  @include grid-template;
+
+  .description{
+    @include full-content-layout;
+    @include grid-template;
+
+    .text{
+
+      .title{
+        display: block;
+      }
+    }
+
+
+
+    &.left{
+      img{
+
+        @media only screen and (min-width: 800px) {
+          display: block;
+          grid-column-start: 1;
+          grid-column-end: 6;
+
+          width: 100%
+        }
+      }
+
+      .text{
+        display: block;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        background: blue;
+      }
+
+    }
+
+    &.right{
+
+    }
+  }
+
+}
+
 /* articles section */
 .articles {
 
