@@ -8,8 +8,8 @@
   @include standard-content-layout;
 
   @media only screen and (min-width: 800px) {
-    grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 7;
   }
 
   height: 80vh;
@@ -35,8 +35,8 @@
 
   @media only screen and (min-width: 800px) {
     display: block;
-    grid-column-start: 6;
-    grid-column-end: 10;
+    grid-column-start: 7;
+    grid-column-end: 11;
   }
 
   img{
@@ -44,6 +44,7 @@
     top: 50%;
     transform: translateY(-50%);
     max-width:100%;
+
   }
 }
 
@@ -95,21 +96,25 @@ section {
 
 
     &.left{
-      img{
+      .preview-image{
 
         @media only screen and (min-width: 800px) {
           display: block;
-          grid-column-start: 1;
-          grid-column-end: 6;
-
-          width: 100%
+          grid-column-start: 2;
+          grid-column-end: 7;
+          background: green;
+          background-image: url("/design-preview.png");
+          background-size: cover;
+          background-position: right;
+          background-repeat: no-repeat;
+          height: 600px;
         }
       }
 
       .text{
         display: block;
-        grid-column-start: 6;
-        grid-column-end: 10;
+        grid-column-start: 7;
+        grid-column-end: 11;
         background: blue;
       }
 
