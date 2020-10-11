@@ -9,10 +9,10 @@
 
   @media only screen and (min-width: 800px) {
     grid-column-start: 3;
-    grid-column-end: 7;
+    grid-column-end: 8;
   }
 
-  height: 80vh;
+  height: 90vh;
   position: relative;
   padding: 0;
 
@@ -35,7 +35,7 @@
 
   @media only screen and (min-width: 800px) {
     display: block;
-    grid-column-start: 7;
+    grid-column-start: 8;
     grid-column-end: 11;
   }
 
@@ -78,7 +78,6 @@ section {
 
 /* my work */
 .my-work{
-  background: red;
   @include full-content-layout;
   @include grid-template;
 
@@ -88,8 +87,12 @@ section {
 
     .text{
 
+      font: $regular-content-font;
+
       .title{
         display: block;
+
+        font: $content-title-font;
       }
     }
 
@@ -102,7 +105,6 @@ section {
           display: block;
           grid-column-start: 2;
           grid-column-end: 7;
-          background: green;
           background-image: url("/design-preview.png");
           background-size: cover;
           background-position: right;
@@ -115,7 +117,6 @@ section {
         display: block;
         grid-column-start: 7;
         grid-column-end: 11;
-        background: blue;
       }
 
     }
