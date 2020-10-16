@@ -84,9 +84,9 @@ section {
   .description{
     @include full-content-layout;
     @include grid-template;
+    height: 90vh;
 
     .text{
-
       font: $regular-content-font;
 
       .title{
@@ -122,6 +122,27 @@ section {
     }
 
     &.right{
+
+      .preview-image{
+
+        @media only screen and (min-width: 800px) {
+          display: block;
+          grid-column-start: 7;
+          grid-column-end: 12;
+          background-image: url("/design-preview.png");
+          background-size: cover;
+          background-position: left;
+          background-repeat: no-repeat;
+          height: 600px;
+        }
+      }
+
+      .text{
+        display: block;
+        grid-column-start: 3;
+        grid-column-end: 7;
+      }
+
 
     }
   }
