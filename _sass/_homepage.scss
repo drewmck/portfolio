@@ -9,24 +9,33 @@
 
   @media only screen and (min-width: 800px) {
     grid-column-start: 3;
-    grid-column-end: 8;
+    grid-column-end: 7;
   }
 
   height: 90vh;
   position: relative;
   padding: 0;
 
-  h3{
+  .bio-wrapper{
     position: absolute;
     top: 40%;
     transform: translateY(-40%);
-    font: $hello-message-font;
-  }
+    margin: 0;
 
-  h3.salutations{
-    font-weight: 400;
+    h3.salutations{
+      font: $hello-message-font;
+      font-weight: 700;
+      margin-bottom: $grid-unit;
+    }
+
+    p.introduction{
+      margin-top: 0;
+      font: $large-content-font;
+      font-weight: 400;
+    }
   }
 }
+
 .bio-image{
 
   display: none;
@@ -35,17 +44,40 @@
 
   @media only screen and (min-width: 800px) {
     display: block;
-    grid-column-start: 8;
-    grid-column-end: 11;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    background-size: cover;
+    background-image: url("/drew-at-desk.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 500px;
   }
 
-  img{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width:100%;
+  // img{
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   max-width:100%;
+  //
+  // }
+}
+
+.problem-statement{
+  min-height: 70vh;
+
+  text-align: center;
+
+  h3{
+    font: $hello-message-font;
+    font-weight: 700;
 
   }
+  p{
+    font: $large-content-font;
+    max-width: $grid-unit*120;
+    margin: auto;
+  }
+
 }
 
 

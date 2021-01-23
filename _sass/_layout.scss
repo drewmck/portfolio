@@ -1,8 +1,8 @@
 @import 'variables';
 
 /*grid variables*/
-$grid-gap: $grid-unit*3;
-$col-width: $grid-unit*13;
+$grid-gap: $grid-unit*4;
+$col-width: $grid-unit*12;
 
 /* grid layout */
 $col-minmax-var: minmax(0px, $col-width);
