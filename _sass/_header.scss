@@ -4,7 +4,7 @@
 
 header {
 
-  @include standard-content-layout;
+  @include wide-content-layout;
 
   padding: $grid-unit*3 0 0 0;
   margin-top: $grid-unit*2;
