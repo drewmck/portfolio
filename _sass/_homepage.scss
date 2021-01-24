@@ -94,6 +94,8 @@ section {
     }
 
     .description{
+
+
       margin-bottom: 0*$grid-unit;
       margin-top: 2*$grid-unit;
       font: $large-content-font;
@@ -111,6 +113,8 @@ section {
     @include full-content-layout;
     @include grid-template;
 
+    min-height: 90vh;
+
     .title{
       font: $content-title-font;
     }
@@ -118,9 +122,13 @@ section {
     &.full{
       .text{
         @include standard-content-layout;
+
+        margin: auto;
       }
       .preview-image{
         @include wide-content-layout;
+
+        margin: auto;
       }
       .preview-image img{
         width: 100%;
@@ -130,7 +138,7 @@ section {
     &.right{
 
       .preview-image{
-
+        margin: auto;
         @media only screen and (min-width: 800px) {
           display: block;
           grid-column-start: 7;
@@ -139,6 +147,7 @@ section {
       }
 
       .text{
+        margin: auto;
         display: block;
         grid-column-start: 3;
         grid-column-end: 6;
