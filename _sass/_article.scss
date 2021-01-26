@@ -14,6 +14,11 @@ article{
     @include standard-content-layout;
   }
 
+  .wide-width-section{
+    @include wide-content-layout;
+
+  }
+
   .full-width-section {
     @include full-content-layout;
 

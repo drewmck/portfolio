@@ -5,8 +5,9 @@ $brand-font: 500 28px 'Source Sans Pro';
 $menu-item-font: 400 24px 'Source Sans Pro';
 $hello-message-font: 400 40px/48px 'Source Serif Pro';
 
-$section-title-font: 600 28px/40px 'Source Serif Pro';
-$content-title-font: 600 40px/48px 'Source Serif Pro';
+$page-title-font: 600 48px/48px 'Source Serif Pro';
+$section-title-font: 600 40px/40px 'Source Serif Pro';
+$content-title-font: 600 32px/48px 'Source Serif Pro';
 $large-content-font: 400 28px/40px 'Source Serif Pro';
 $regular-content-font: 400 28px/40px 'Source Serif Pro';
 $light-content-font: 400 20px/32px 'Source Sans Pro';
@@ -21,9 +22,9 @@ a:hover {color: $blue-dark; text-decoration: underline;}
 strong, b { font-weight: 700; }
 
 h1.title {font-size: 1.75rem; margin: 0; font-weight: 500;}
-h1 {font-size: 2rem; font-weight: 700; margin-top: $grid-unit*4; margin-bottom: $grid-unit*4}
-h2 {font-size: 2rem; font-weight: 700;}
-h3 {font: $section-title-font;}
+h1 {font: $page-title-font; margin-top: $grid-unit*4; margin-bottom: $grid-unit*4}
+h2 {font: $section-title-font;}
+h3 {font: $content-title-font;}
 
 h1 a, h2 a {color: $neutral-dark; text-decoration: none;}
 
