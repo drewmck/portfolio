@@ -6,7 +6,7 @@
 .bio-in-brief {
 
   @media only screen and (min-width: 800px) {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 7;
   }
 
@@ -43,7 +43,7 @@
   @media only screen and (min-width: 800px) {
     display: block;
     grid-column-start: 7;
-    grid-column-end: 12;
+    grid-column-end: 13;
     height: 90vh;
   }
 
