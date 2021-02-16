@@ -25,8 +25,16 @@ article{
     margin-top: -1*$grid-unit*5;
     padding-top: 0;
 
-    text-align:center;
+    text-align: center;
   }
 
   img {width: 100%;}
+
+  .image-tile{
+    @include wide-content-layout;
+
+    display: grid;
+    grid-gap: $grid-unit *3;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr))
+  }
 }
