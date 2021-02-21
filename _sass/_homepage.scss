@@ -103,6 +103,26 @@ section {
   }
 }
 
+/*contact form*/
+section.contact{
+  @include full-content-layout;
+  @include grid-template;
+
+  height: 100vh;
+  background: #27335B;
+
+
+
+  form{
+    background: white;
+    display: block;
+    grid-column-start: 5;
+    grid-column-end: 11;
+    margin-top: 20vh;
+  }
+}
+
+
 /* my work */
 .my-work{
 

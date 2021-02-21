@@ -52,7 +52,7 @@
 		<img src="/drew-at-desk.svg" />
 	</section>
 
-
+<!--
 
 <section class="my-work">
 
@@ -88,7 +88,7 @@
 </section>
 
 
-<!--
+
 <section class="articles">
 
 	<div class="section-title">
@@ -198,11 +198,34 @@ projects
 
 <section class="contact">
 
-	<div class="section-title">
-		<h3><a name="articles">Let's be friends</a></h3>
-	</div>
 
-	<p>My email is mckinney.drew {at} gmail. If you're in the Boulder/Denver area, I'd love to get a coffee and chat about design, product, whatever.</p>
+	<form action="http://formspree.io/drew@bloomingsoft.com" method="post" class="contact-form">
+
+		<div class="form-body">
+
+			<input type=hidden name="redirect" value="http://work.andrewmckinney.com/contact-thanks/">
+			<input type=hidden name="recipient" value="drew@bloomingsoft.com">
+
+
+			<p>
+				<label>Your email address:</label>
+				<input class="emailAddress" value="" id="email" name="email" ></input>
+			</p>
+
+			<p>
+				<label>Subject:</label>
+				<input class="subject" value="" id="subject" name="subject" ></input>
+			</p>
+
+			<p>Message:
+				<label>Message</label>
+				<textarea name="comment" rows="5" id="comment" class="bodytext"></textarea>
+			</p>
+
+			<input type="submit" name="Submit" value="Submit" id="submit" name="submit">
+
+		</div>
+	</form>
 
 </section>
 
