@@ -36,8 +36,18 @@ $col-layout-outter-small: repeat(8, 1fr);
   grid-column-end: 8;
 
   @media only screen and (min-width: 800px) {
-    grid-column-start: 3;
-    grid-column-end: 12;
+    grid-column-start: 4;
+    grid-column-end: 11;
+  }
+}
+
+@mixin super-wide-content-layout{
+  grid-column-start: 1;
+  grid-column-end: 9;
+
+  @media only screen and (min-width: 800px) {
+    grid-column-start: 2;
+    grid-column-end: 13;
   }
 }
 
@@ -46,8 +56,8 @@ $col-layout-outter-small: repeat(8, 1fr);
   grid-column-end: 9;
 
   @media only screen and (min-width: 800px) {
-    grid-column-start: 2;
-    grid-column-end: 13;
+    grid-column-start: 3;
+    grid-column-end: 12;
   }
 }
 
@@ -69,10 +79,4 @@ main {
   @include grid-template;
 
   margin: 0 0 ;
-}
-
-//General section gridding
-section{
-  padding: $grid-unit*0 0;
-  @include standard-content-layout;
 }

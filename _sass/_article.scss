@@ -1,5 +1,6 @@
 @import 'layout';
 @import 'variables';
+@import 'typography';
 
 /* wrapper for content page articles */
 
@@ -8,7 +9,10 @@ article{
   @include full-content-layout;
   @include grid-template;
 
+
   margin-bottom: $grid-unit * 8;
+
+  font: $regular-content-font;
 
   section{
     @include standard-content-layout;
@@ -31,7 +35,7 @@ article{
   img {width: 100%;}
 
   .image-tile{
-    @include wide-content-layout;
+    @include super-wide-content-layout;
 
     display: grid;
     grid-gap: $grid-unit *3;
