@@ -2,6 +2,7 @@
 
 @import 'variables';
 @import 'typography';
+@import 'layout';
 
 section{
 
@@ -15,29 +16,37 @@ section{
 
 .bio-in-brief {
 
+
+  grid-column-start: 1;
+  grid-column-end: 9;
+  margin: $grid-unit * 4;
+
   @media only screen and (min-width: 800px) {
     grid-column-start: 2;
     grid-column-end: 7;
+
+      height: 100vh;
   }
 
-  height: 90vh;
+
   position: relative;
   padding: 0;
 
+  display: flex;
+  align-items: center;
+
   .bio-wrapper{
-    position: absolute;
-    top: 40%;
-    transform: translateY(-40%);
-    margin: 0;
+    display: block;
+
 
     h3.salutations{
       font: $hello-message-font;
+      margin-top: 0px;
       font-weight: 700;
       margin-bottom: $grid-unit;
     }
 
-    p.introduction{
-      margin-top: 0;
+    p{
       font: $large-content-font;
       font-weight: 400;
     }
@@ -46,23 +55,34 @@ section{
 
 .bio-image{
 
-  display: none;
+  display: block;
   position: relative;
   padding: 0;
+
+  grid-column-start: 2;
+  grid-column-end: 8;
+
+  img{
+    width: 100%;
+  }
+
 
   @media only screen and (min-width: 800px) {
     display: block;
     grid-column-start: 7;
     grid-column-end: 13;
-    height: 90vh;
+    height: 100vh;
+
+    img{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+
+    }
   }
 
-  img{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-  }
+
 }
 
 .problem-statement{
