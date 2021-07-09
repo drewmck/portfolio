@@ -1,0 +1,44 @@
+@import 'layout';
+@import 'variables';
+@import 'typography';
+
+/* wrapper for content page articles */
+
+article{
+
+  @include full-content-layout;
+  @include grid-template;
+
+
+  margin-bottom: $grid-unit * 8;
+
+  font: $regular-content-font;
+
+  section{
+    @include standard-content-layout;
+  }
+
+  .wide-width-section{
+    @include wide-content-layout;
+
+  }
+
+  .full-width-section {
+    @include full-content-layout;
+
+    margin-top: -1*$grid-unit*5;
+    padding-top: 0;
+
+    text-align: center;
+  }
+
+  img {width: 100%;}
+
+  .image-tile{
+    @include super-wide-content-layout;
+
+    display: grid;
+    grid-gap: $grid-unit *3;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr))
+  }
+}

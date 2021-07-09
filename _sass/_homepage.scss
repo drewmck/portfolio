@@ -1,0 +1,381 @@
+/*  bio sections */
+
+@import 'variables';
+@import 'typography';
+@import 'layout';
+
+section{
+
+  @media only screen and (min-width: 800px) {
+    display: block;
+    grid-column-start: 2;
+    grid-column-end: 13;
+  }
+
+}
+
+.bio-in-brief {
+
+
+  grid-column-start: 1;
+  grid-column-end: 9;
+  margin: $grid-unit * 4;
+
+  @media only screen and (min-width: 800px) {
+    grid-column-start: 2;
+    grid-column-end: 7;
+
+    height: 100vh;
+    margin: 0;
+  }
+
+
+  position: relative;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  .bio-wrapper{
+    display: block;
+
+
+    h3.salutations{
+      font: $hello-message-font;
+      margin-top: 0px;
+      font-weight: 700;
+      margin-bottom: $grid-unit;
+    }
+
+    p{
+      font: $large-content-font;
+      font-weight: 400;
+    }
+  }
+}
+
+.bio-image{
+
+  display: block;
+  position: relative;
+  padding: 0;
+
+  grid-column-start: 2;
+  grid-column-end: 8;
+
+  img{
+    width: 100%;
+  }
+
+
+  @media only screen and (min-width: 800px) {
+    display: block;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    height: 100vh;
+
+    img{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+
+    }
+  }
+
+
+}
+
+.problem-statement{
+  min-height: 70vh;
+
+  text-align: center;
+
+  h3{
+    font: $hello-message-font;
+    font-weight: 700;
+
+  }
+  p{
+    font: $large-content-font;
+    max-width: $grid-unit*120;
+    margin: auto;
+  }
+
+}
+
+
+//Homepage section specifics
+section {
+
+  .section-title{
+    margin-bottom: 6*$grid-unit;
+
+    h3 {
+      display: inline-block;
+      font: $section-title-font;
+      padding-bottom: 2px;
+      margin-bottom: $grid-unit;
+
+      /* anchor styling */
+      a{
+        color: $neutral-dark;
+        pointer-events: none;
+      }
+    }
+
+    .description{
+
+
+      margin-bottom: 0*$grid-unit;
+      margin-top: 2*$grid-unit;
+      font: $large-content-font;
+    }
+  }
+}
+
+/*contact form*/
+section.contact{
+  @include full-content-layout;
+  @include grid-template;
+
+  height: 100vh;
+  background: #27335B;
+
+
+
+  form{
+    background: white;
+    display: block;
+    grid-column-start: 5;
+    grid-column-end: 11;
+    margin-top: 20vh;
+  }
+}
+
+
+/* my work */
+.my-work{
+
+  @include full-content-layout;
+  @include grid-template;
+
+  .description{
+    @include full-content-layout;
+    @include grid-template;
+
+    min-height: 90vh;
+    font: $regular-content-font;
+
+    .title{
+      font: $content-title-font;
+    }
+
+    .preview-image{
+      width: 100%;
+    }
+    .preview-image img{
+      width: 100%;
+    }
+
+    &.full{
+      .text{
+        @include standard-content-layout;
+
+        margin: auto;
+      }
+      .preview-image{
+        @include wide-content-layout;
+
+        margin: auto;
+      }
+
+    }
+
+    &.right{
+
+      .preview-image{
+        margin: auto;
+        @media only screen and (min-width: 800px) {
+          display: block;
+          grid-column-start: 7;
+          grid-column-end: 13;
+        }
+      }
+
+      .text{
+        margin: auto;
+        display: block;
+        grid-column-start: 2;
+        grid-column-end: 7;
+      }
+    }
+
+    &.left{
+
+      .preview-image{
+        margin: auto;
+        @media only screen and (min-width: 800px) {
+          display: block;
+          grid-column-start: 2;
+          grid-column-end: 9;
+        }
+      }
+
+      .text{
+        margin: auto;
+        display: block;
+        grid-column-start: 9;
+        grid-column-end: 14;
+      }
+    }
+
+  }
+
+}
+
+/* articles section */
+.articles {
+
+  p{
+    font: $large-content-font;
+  }
+
+  p.more-link{
+    font-style: italic;
+  }
+
+  ul.articles-list{
+
+    padding-left: 0;
+
+    li.article{
+      margin-bottom: $grid-unit * 6;
+      display: flex;
+
+
+      img.article-preview{
+        display: inline-block;
+        width: $grid-unit*14;
+        margin-right: $grid-unit*4;
+      }
+
+      .article-summary{
+        flex: 1;
+
+          .article-title{
+            font: $content-title-font;
+            display: block;
+            color: $neutral-dark;
+          }
+          .article-description{
+            font: $regular-content-font;
+            color: $neutral-light-2;
+            display: block;
+          }
+
+      }
+
+    }
+
+
+
+  }
+}
+
+.case-studies {
+  @include full-content-layout;
+  @include grid-template;
+
+  .section-title{
+    @include standard-content-layout;
+  }
+
+  .project-tile{
+    @include wide-content-layout;
+    @include grid-template;
+
+    margin-bottom: $grid-unit * 8;
+
+    .project-image-link {
+      @include wide-content-layout;
+
+      & img{
+        width: 100%;
+
+        @media only screen and (min-width: 800px) {
+          display: block;
+          width: auto;
+          margin: auto;
+        }
+      }
+
+      &.victorops-android{
+        background: $orange-light;
+      }
+
+      &.victorops-onboarding{
+        background: $orange-light;
+      }
+
+      &.pivotal-tracker-analytics{
+        background: $blue-light;
+      }
+
+      &.listacular{
+        background: $blue-light;
+      }
+
+    }
+
+    .project-description{
+
+      @include standard-content-layout;
+
+      .project-title{
+        font: $content-title-font;
+        margin-bottom: $grid-unit;
+        margin-top: $grid-unit;
+      }
+
+      .project-summary{
+        margin: 0;
+        font: $light-content-font;
+        color: $neutral-light-2;
+      }
+    }
+  }
+}
+
+// .contact {
+//   @include full-content-layout;
+//   @include grid-template;
+//
+//   .section-title{
+//     @include standard-content-layout;
+//   }
+//
+//   form{
+//     @include full-content-layout;
+//     @include grid-template;
+//
+//     input {
+//       @include standard-content-layout;
+//
+//       &[type=submit]{
+//         grid-column-start: 7;
+//         grid-column-end: 9;
+//       }
+//     }
+//     p {
+//       margin-top: 0px;
+//       margin-bottom: $grid-unit;
+//       grid-column-start: 3;
+//       grid-column-end: 7;
+//
+//       &.message-field{
+//         @include standard-content-layout;
+//       }
+//     }
+//   }
+// }
