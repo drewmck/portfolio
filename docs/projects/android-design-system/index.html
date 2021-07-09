@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Andrew McKinney">
+	<!-- Date: 2012-03-06 -->
+
+	<meta id="viewport" name="viewport" content="width=device-width">
+
+
+
+	<!-- <script src="./script/jquery-1.7.2.min.js"></script>
+	<script>
+
+	if ($(window).width() > 320 & $(window).width() <= 480) {
+		 $('meta[name=viewport]').attr('content','width=480');
+	}
+	else if ($(windo
+	w).width() > 481) {
+		 $('meta[name=viewport]').attr('content','width=1024');
+	}
+
+	</script> -->
+
+	<title>Android design system - Andrew McKinney</title>
+
+	<link rel="stylesheet" id="fonts-style-css" href="//fonts.googleapis.com/css?family=Lato" type="text/css" media="all">
+	<link rel="stylesheet" href="/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+</head>
+<body>
+
+
+
+	<div class="header_wrapper">
+		<section>
+
+
+
+				<div class="logo">
+					<a href="" title="Drew McKinney"
+
+
+					></a>
+				</div>
+				<div class="title"><a href="/" rel="home">Drew McKinney</a>
+
+
+
+				</div>
+
+
+				<nav class="menu">
+
+
+
+					<ul class="social-icons">
+						<li class="social-icon"><a class="email" href="/contact"></a></li>
+						<li class="social-icon"><a class="dribbble" href="http://www.dribbble.com/drewmck"></a></li>
+						<li class="social-icon"><a class="linkedin" href="http://www.linkedin.com/in/andrewmckinney"></a></li>
+						<li class="social-icon"><a class="twitter" href="http://www.twitter.com/drewmck"></a></li>
+
+
+
+					</ul>
+				</nav>
+
+
+
+			</header>
+		</section>
+	</div>
+
+
+
+
+		<div class="body_wrapper">
+
+
+
+
+				<section>
+
+<h1>Android design system</h1>
+
+<p>Our company had a great design for our iOS app, but our Android experience was lagging behind. On top of this, we were moving quickly as a company, and developments were happening with (or without) my input as a designer.
+</p>
+
+<p>I was also working on a number of different projects (including a major web redesign) so I needed a way to communicate design direction to our mobile team and in a way that enabled them to make decisions about gaps in the design without my input.
+</p>
+
+<a href="design-system-full.png"><img srcset="android-design-system-preview.png 1x, android-design-system-preview@2x.png 2x" /></a>
+<p class="caption"><a href="design-system-full.png">A sample of our Android design system</a></p>
+
+<h2>What is a design system, and why did we need one?</h2>
+
+<p>A design system is a collection of reusable components to tie an entire product together. A design system goes beyond simple styleguides and component libraries to provide a repeatable means of making decisions about how a particular part of the product should look or act based on said components.
+</p>
+<p>This was useful in my team's situation, where I had limited time to provide screens for every product scenario, and needed to rely on my team to make design decisions.
+</p>
+
+<h2>Starting with sketches and wireframes</h2>
+
+<p>We knew that we wanted to use a recognizable Material design approach as we wanted the app to feel familiar and obvious to our users.</p>
+
+<p>I started by mapping out the major sections of the app important in a "firefight" (where someone is getting bombarded with alerts and needs to remediate problems quickly). I designed a simple nav structure using <a href="https://material.io/guidelines/patterns/navigation-drawer.html">Material's drawer nav model</a>, which acted as the root for the rest of the navigation.</p>
+
+<img class="twocol-image-left" srcset="android-sketch-1.png 1x, android-sketch-1@2x.png 2x" />
+<img class="twocol-image-right" srcset="android-sketch-2.png 1x, android-sketch-2@2x.png 2x" />
+
+<img style="margin-top: 0;" srcset="android-wireframes-preview.png 1x, android-wireframes-preview@2x.png 2x" />
+<p class="caption">Sample of the lo-fi wireframes developed for Android</p>
+
+<p>From there I explored how each screen might appear in the app, including aggregate index screens and function-specific details screens.</p>
+
+<p>After having the major functional areas wireframed, I reviewed with the team (and our customer-facing company reps) and moved onto hi-fidelity designs and components.</p>
+
+
+<h2>Mapping out components</h2>
+
+<p>A guiding principle in any design system is to have common components in our product mapped out and their behavior defined. This not only provides a template and common component library for other designs to work with, but provides low-touch guidance to developers as well.</p>
+
+<p>In our case, this took the form of a hi-fidelity component broken out by section. Each section had specific spacing, color, and font direction.</p>
+
+<img srcset="incident-header-component.png 1x, incident-header-component@2x.png 2x" />
+
+
+<h2>Waking someone unexpectedly in the middle of the night</h2>
+
+<p>Since our app was an on-call solution, users would frequently receive an alert that they would have to respond to in the middle of the night. This would mean a combination of digging into alert details, responding to incidents, and rerouting to the appropriate people.</p>
+<p>At 1am, a mostly white-themed app is a less-than-desirable experience. To address this, we included a "night mode" which would be triggered by default at times between 9pm and 8am. Users could disable this feature altogether, or enable it all the time (which we found many people did)</p>
+
+
+<a href="android-design-preview@2x.png"><img srcset="android-design-preview-small.png 1x, android-design-preview-small@2x.png 2x" /></a>
+<a href="android-nightmode-preview@2x.png"><img srcset="android-nightmode-preview-small.png 1x, android-nightmode-preview-small@2x.png 2x" /></a>
+
+<script>
+document.getElementsByTagName('video')[0].onended = function () {
+  this.append("controls");
+};
+</script>
+
+</div>
+
+
+
+
+</body>
+</html>

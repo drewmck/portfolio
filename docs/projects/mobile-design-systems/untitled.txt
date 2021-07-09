@@ -1,0 +1,51 @@
+Listacular
+
+Image of app
+
+# The opportunity
+
+Wayyyy back in 2011, I had some success with an app called Droplist. Before iCloud had been established as Apple's sync platform dujour, Dropbox was really the only gig in town. Droplist was a todo list app which synced .txt files between the phone and Dropbox. A simple concept, but it turned out to have a big impact in the appstore.
+
+After a year or so with this app, I had a reasonably good idea of what else was possible from a customer-perspective, but the app was poorly written and stuck in a design which was difficult to update. I decided to do an re-write of the app altogether and focus on a slightly different market.
+
+[Droplist images with annotations]
+
+
+# Introducing Listacular: way more than Droplist
+
+While the app was successful, I had a number of customers underserved by the product. I spoke to a number of these dissastisfied customers to understand more about the apps shortcomings, but also more about who they were and what they cared about. What I learned is that many of my customers could be considered "power users": people who were already pushing the envelope with their apps and process, and were tech-savvy, and generally valued control over simplicity.
+ 
+[persona of user]
+
+There were a number of enhancements I wanted to make to Droplist, but could not for one reason or another. Namely:
+- Including subfoldering and list movements, which I was limited from doing with the previous app
+- Setting due dates with alerts
+- Allowing bulleted lists along with todo items, something I was limited to with the current design
+- Enhance the app with gesture-based interactions for common tasks like deleting, checking items, setting due dates, etc.
+
+
+
+# Exemplar research
+
+I looked at a number of apps for guidance on interaction design, aesthetic and functionality. These include:
+
+- Mailbox - Was brand new at the time. It included gesture-based interactions for checking-off and archiving email items. While popular, they frequently overloaded swipes with multiple (and different) functions, which made the app somewhat fidgity to use. Still, the simplicity of the aesthetics and quality of gesture-based interactions was something I aspired to emulate.
+
+- TaskPaper - Extremely popular on OSX (but since removed from the iOS appstore), TaskPaper is a text-based outlining and todo app. It syncs with Dropbox, much like Droplist, and I was actually unaware of TaskPaper when I made the original app. Taskpaper maintained a simple, yet powerful interface by encouraging the use of a keyboard menu and textual elements to represent complex interactions like tagging, headers, etc.
+
+
+
+# The initial designs
+
+
+
+
+
+# The design
+
+
+# The results
+
+Listacular was launched to much less fanfare initially, but eventually found a strong niche audience. It received very positive articles from Lifehacker, AppAdvice, and had its own feature on Beautiful Pixels. It continues to be steadily profitable to this day, despite not having the big opening day success with Droplist did.
+
+
