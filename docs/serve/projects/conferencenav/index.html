@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Andrew McKinney">
+	<!-- Date: 2012-03-06 -->
+
+	<meta id="viewport" name="viewport" content="width=device-width">
+
+
+
+	<script src="./script/jquery-1.7.2.min.js"></script>
+	<script>
+	
+	if ($(window).width() > 320 & $(window).width() <= 480) {
+		 $('meta[name=viewport]').attr('content','width=480'); 
+	}
+	else if ($(window).width() > 481) {
+		 $('meta[name=viewport]').attr('content','width=1024'); 
+	}
+	
+	</script>
+	
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+</head>
+<body>
+
+<div class="menu-wrap">
+	<div class="menu">
+		<div class="menu-bullet"></div>
+		<ul class="menu">
+			<a href="/" class="button"><li>Home</li></a>
+			<a href="/about/" class="button"><li>About</li></a>
+			<a href="http://drewux.tumblr.com" class="button"><li>Blog</li></a>
+			
+		</ul>
+		<ul class="menu icons">
+			<li><a href="http://www.linkedin.com/in/andrewmckinney" class="linkedin-icon button"></a></li>
+			<li><a href="http://www.twitter.com/drewmck" class="twitter-icon button"></a></li>
+
+			
+		</ul>
+	</div>
+</div>
+
+<div class="page-wrapper">
+
+	<div class="content-wrapper">
+		
+		<div class="content-container">
+
+			<h1>Conference Nav</h1>
+
+<p class="bi-line">
+Large-scale conferences and tradeshows needed an improved mobile experience. Our team used user-centered design and development principles to create a next-generation conference app framework.
+<br /><br />
+<a href="https://itunes.apple.com/md/app/haas-business-healthcare-conference/id501871521?mt=8">Check out a demo app on the appstore</a>, created for the Berkeley HAAS Business of Healthcare conference.
+</p>
+
+
+<h2>The problem</h2>
+
+<p>Large-scale conferences and tradeshows spend tens of thousands of dollars on organizing and printing conference material. Depending on the event, these pamphlets may be as big as 100 pages, and suffer from severe information-finding problems.</p>
+
+<p>Increasingly, event attendees rely on their mobile phones for conference updates and information. But event organizers simply don't have the time or resources to create a worthy mobile experience. At the time, conference apps that did exist worked well for smaller events, but could not accommodate larger events.</p>
+
+<img width=300 src="conf binder.jpg" />
+<img width=300 src="crowded booth.jpg" />
+<img width=300 src="group on ipads.jpg" />
+<img width=300 src="walking the floor.jpg" />
+
+
+<h2>Challenges</h2>
+
+<p>Through a series of in-person interviews and tradeshow vendors, along with our own experience, we discovered that:</p>
+
+<h3>Organizers can't connect to people</h3>
+
+<ul>
+
+	<li>Follow-ups at tradeshow tables</li>
+
+	<li>Updates to event (rescheduling, cancellations, etc.)</li>
+
+	<li>Feedback from events</li></ul>
+
+<h3>People can't find what they want</h3>
+
+<ul>
+	<li>Tables at trade shows, sponsor tables. Attendees often need to find a specific table, but maps in event guides can be difficult to parse.</li>
+
+	<li>Schedule and speakers - Attendees often want to find a talk by speaker or subject, but also need to negotiate time constraints. Guides offer no good way to parse this information dynamically and inform the attendee how these events align with their calendar</li></ul>
+	
+
+
+<h2>Design</h2>
+
+<a href="confnav-arch-map.png">
+<img class="link-image" src="confnav-arch-map-small.png">
+</a>
+
+<p>We designed a scalable, modular solution for large-scale events. The app needed to be organizer-friendly, but also user-centered. Thankfully, these interests often align:</p>
+
+<ul>
+<li>Searchable, dynamic content for speakers, events and location-based interests.</li>
+
+<li>Updatable - user informed of changes made to things that impact them</li>
+
+<li>Works online/offline - will store current state and only update when a connection is found</li>
+
+<li>Prominence for promoted items by organizer (advertising, donor status, etc.)</li>
+</ul>
+
+
+<h2>Organizer experience</h2>
+
+<p>ConferenceNav featured a publisher update screen, where organizers could produce content and publish them to the app. This could happen pre- or post-launch, and changes would populate to the participant's devices automatically. Organizers could upload profile images, change presenter information, create agenda items and like sessions to floor plans and maps.</p>
+
+<p>Post-event, organizers could login and see attendee session feedback. They could also see which sessions received the most attention, which tradeshow booths had the most traffic, and which speakers attendees were most interested in.</p>
+
+<a href="update-app-map.png">
+<img class="link-image" src="update-app-map.png">
+</a>
+<a href="review-session.png">
+<img class="link-image" src="review-session.png">
+</a>
+
+<br /><br />
+
+<h2>Participant experience</h2>
+
+<p>Participants would download the app from the iTunes Appstore or Google Play store. Once completed, they could use the app to star sessions they were interested, find relevant session rooms or tradeshow booths, and find other participants/speakers.</p>
+
+<p>Most of the needs we identified for participants were around information finding (where something is, what time its at, who is speaking) and connecting with others (other participants, speakers).</p>
+
+<p>Once a session they starred was completed, they would be prompted to rate it using a smiley system. Starred items, session ratings and other relevant metrics would be sent to the server.</p>
+
+<p>In future versions we had planned for an opted-in attendee experience, where attendees could post a photo, their LinkedIn details, etc. and connect with each other. This would improve their co-attendee experience, and allow tradeshow booths to connect with attendees on a more personal-level (as opposed to badge scanners).</p>
+
+<a href="haas-app-2.png">
+<img class="link-image" src="haas-app-2.png">
+</a>
+<a href="haas-app-3.png">
+<img class="link-image" src="haas-app-3.png">
+</a>
+
+
+
+<h2>Result</h2>
+
+<p>We created the app for the Berkely HAAS Business of Healthcare. Our demo went well, participants found the app easy to use, and organizers mentioned they could have printed far fewer programs as a result. The feedback system also worked well for the organizers, and they reported the system reduced their review aggregate time by two-thirds.</p>
+
+
+			
+		</div>
+
+	</div>
+
+</div>
+
+<div class="footer">
+	Copyright Andrew McKinney 2010-2013
+</div>
+
+</body>
+</html>
