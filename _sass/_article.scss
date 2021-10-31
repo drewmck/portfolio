@@ -9,10 +9,7 @@ article{
   @include full-content-layout;
   @include grid-template;
 
-
   margin-bottom: $grid-unit * 8;
-
-  font: $regular-content-font;
 
   section{
     @include standard-content-layout;

@@ -6,9 +6,9 @@ $hello-message-font: 400 32px/40px 'Source Sans Pro';
 $menu-item-font: 400 24px 'Source Sans Pro';
 
 $page-title-font: 600 48px/48px 'Source Sans Pro';
-$section-title-font: 400 40px/40px 'Source Sans Pro';
-$content-title-font: 600 32px/48px 'Source Sans Pro';
-$regular-content-font: 300 22px/40px 'Source Serif Pro';
+$section-title-font: 600 32px/40px 'Source Sans Pro';
+$content-title-font: 600 26px/48px 'Source Sans Pro';
+$regular-content-font: 500 22px/40px 'Source Serif Pro';
 
 $large-content-font: 300 24px/36px 'Source Serif Pro';
 $light-content-font: 300 20px/32px 'Source Sans Pro';
@@ -25,7 +25,7 @@ strong, b { font-weight: 700; }
 h1.title {font-size: 1.75rem; margin: 0; font-weight: 500;}
 h1 {font: $page-title-font; margin-top: $grid-unit*4; margin-bottom: $grid-unit*4}
 h2 {font: $section-title-font;}
-h3 {font: $content-title-font;}
+h3 {font: $content-title-font; padding-top: $grid-unit*3;}
 
 h1 a, h2 a {color: $neutral-dark; text-decoration: none;}
 
