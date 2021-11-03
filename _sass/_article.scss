@@ -20,6 +20,13 @@ article{
 
   }
 
+  div.asset-preview{
+    background: gray;
+    width: $grid-gap*24;
+    height: 500px;
+    float: right;
+  }
+
   .full-width-section {
     @include full-content-layout;
 
