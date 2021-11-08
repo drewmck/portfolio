@@ -9,7 +9,13 @@ article{
   @include full-content-layout;
   @include grid-template;
 
+  ul li::marker {
+    content: "•   "
+  }
+
+
   margin-bottom: $grid-unit * 8;
+  margin-top: $grid-unit * 6;
 
   section{
     @include standard-content-layout;
@@ -22,7 +28,7 @@ article{
 
   div.asset-preview{
     background: gray;
-    width: $grid-gap*24;
+    width: $grid-gap*20;
     height: 500px;
     float: right;
   }
