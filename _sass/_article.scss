@@ -45,7 +45,7 @@ article{
   img {width: 100%;}
 
   .image-tile{
-    @include super-wide-content-layout;
+    @include wide-content-layout;
 
     display: grid;
     grid-gap: $grid-unit *3;

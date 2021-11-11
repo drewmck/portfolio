@@ -6,31 +6,15 @@
 
 section{
 
-  @media only screen and (min-width: 800px) {
-    display: block;
-    grid-column-start: 2;
-    grid-column-end: 13;
-  }
+  @include standard-content-layout;
 
 }
 
 .bio-in-brief {
 
-
-  grid-column-start: 1;
-  grid-column-end: 9;
+  @include standard-content-layout;
 
   margin: $grid-unit * 4;
-
-  @media only screen and (min-width: 800px) {
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 1;
-
-    height: 100vh;
-    margin: 0;
-  }
-
 
   position: relative;
   padding: 0;
@@ -40,6 +24,8 @@ section{
 
   .bio-wrapper{
     display: block;
+    margin: auto;
+    text-align: center;
 
 
     h3.salutations{
@@ -58,36 +44,19 @@ section{
 
 .bio-image{
 
+  @include standard-content-layout;
   display: block;
   position: relative;
   padding: 0;
   margin-top: $grid-unit*4;
 
-  grid-column-start: 2;
-  grid-column-end: 8;
+
+
 
   img{
-    width: 100%;
-  }
-
-
-  @media only screen and (min-width: 800px) {
+    margin: auto;
     display: block;
-
-    margin-top: 0;
-    grid-column-start: 7;
-    grid-column-end: 13;
-    height: 100vh;
-
-    img{
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-
-    }
   }
-
 
 }
 
@@ -114,7 +83,7 @@ section{
 section {
 
   .section-title{
-    margin-bottom: 6*$grid-unit;
+    margin-bottom: 8*$grid-unit;
 
     h3 {
       display: inline-block;
@@ -132,9 +101,9 @@ section {
     .description{
 
 
-      margin-bottom: 0*$grid-unit;
+      margin-bottom: 12*$grid-unit;
       margin-top: 2*$grid-unit;
-      font: $large-content-font;
+      font: $regular-content-font;
     }
   }
 }
@@ -242,8 +211,9 @@ section.contact{
 /* articles section */
 .articles {
 
+
   p{
-    font: $large-content-font;
+    font: $regular-content-font;
   }
 
   p.more-link{
@@ -260,9 +230,16 @@ section.contact{
 
 
       img.article-preview{
-        display: inline-block;
-        width: $grid-unit*14;
-        margin-right: $grid-unit*4;
+        display: none;
+        width: $grid-unit*28;
+        height: $grid-unit*18;
+        margin-left: $grid-unit*8;
+        border-radius: $grid-unit;
+        object-fit: cover;
+
+        @media only screen and (min-width: $min-width) {
+          display: inline-block;
+        }
       }
 
       .article-summary{
@@ -272,11 +249,12 @@ section.contact{
             font: $content-title-font;
             display: block;
             color: $neutral-dark;
+            margin-bottom: $grid-unit*2;
           }
           .article-description{
-            font: $regular-content-font;
-            color: $neutral-light-2;
+            font: $small-content-font;
             display: block;
+            color: $neutral-light;
           }
 
       }
