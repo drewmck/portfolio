@@ -27,17 +27,8 @@ section{
     margin: auto;
     text-align: center;
 
-
-    h3.salutations{
-      font: $hello-message-font;
-      margin-top: 0px;
-      font-weight: 700;
-      margin-bottom: $grid-unit;
-    }
-
     p{
-      font: $large-content-font;
-      font-weight: 400;
+      @include large-content-font;
     }
   }
 }
@@ -87,7 +78,7 @@ section {
 
     h3 {
       display: inline-block;
-      font: $section-title-font;
+      @include section-title-font;
       padding-bottom: 2px;
       margin-bottom: $grid-unit;
 
@@ -103,7 +94,7 @@ section {
 
       margin-bottom: 12*$grid-unit;
       margin-top: 2*$grid-unit;
-      font: $regular-content-font;
+      @include regular-content-font;
     }
   }
 }
@@ -139,10 +130,10 @@ section.contact{
     @include grid-template;
 
     min-height: 90vh;
-    font: $regular-content-font;
+    @include regular-content-font;
 
     .title{
-      font: $content-title-font;
+      @include content-title-font;
     }
 
     .preview-image{
@@ -213,7 +204,7 @@ section.contact{
 
 
   p{
-    font: $regular-content-font;
+    @include regular-content-font;
   }
 
   p.more-link{
@@ -246,13 +237,13 @@ section.contact{
         flex: 1;
 
           .article-title{
-            font: $content-title-font;
+            @include content-title-font;
             display: block;
             color: $neutral-dark;
             margin-bottom: $grid-unit*2;
           }
           .article-description{
-            font: $small-content-font;
+            @include small-content-font;
             display: block;
             color: $neutral-light;
           }
