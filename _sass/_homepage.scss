@@ -14,7 +14,11 @@ section{
 
   @include standard-content-layout;
 
-  margin: $grid-unit * 4;
+  margin: $grid-unit * 2;
+
+  @media only screen and (min-width: $min-width) {
+    margin: $grid-unit * 4;
+  }
 
   position: relative;
   padding: 0;
@@ -74,7 +78,11 @@ section{
 section {
 
   .section-title{
-    margin-bottom: 8*$grid-unit;
+    margin-bottom: 4*$grid-unit;
+
+    @media only screen and (min-width: $min-width) {
+      margin-bottom: 8*$grid-unit;
+    }
 
     h3 {
       display: inline-block;
@@ -161,7 +169,7 @@ section.contact{
 
       .preview-image{
         margin: auto;
-        @media only screen and (min-width: 800px) {
+        @media only screen and (min-width: $min-width) {
           display: block;
           grid-column-start: 7;
           grid-column-end: 13;
