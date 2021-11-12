@@ -14,10 +14,10 @@ section{
 
   @include standard-content-layout;
 
-  margin: $grid-unit * 2;
+  margin-bottom: $grid-unit * 4;
 
   @media only screen and (min-width: $min-width) {
-    margin: $grid-unit * 4;
+    margin: $grid-unit * 8;
   }
 
   position: relative;
@@ -81,8 +81,11 @@ section{
 //Homepage section specifics
 section {
 
+  magrin-bottom: $grid-unit * 4;
+
   .section-title{
     margin-bottom: 4*$grid-unit;
+    margin-top: 0;
 
     @media only screen and (min-width: $min-width) {
       margin-bottom: 6*$grid-unit;
@@ -93,6 +96,8 @@ section {
       @include section-title-font;
       padding-bottom: 2px;
       margin-bottom: $grid-unit;
+      margin-top: 0;
+      padding-top: 0;
 
       /* anchor styling */
       a{
