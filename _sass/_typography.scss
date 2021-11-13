@@ -46,10 +46,10 @@ $content-title-font: 600 1.75rem/2.25rem 'Source Sans Pro';
 }
 
 @mixin large-content-font{
-  font: 500 1.5rem/1.75rem 'Source Serif Pro';
+  font: 500 1.5rem/2rem 'Source Serif Pro';
 
   @media only screen and (min-width: $min-width) {
-    font: 500 1.75rem/2rem 'Source Serif Pro';
+    font: 500 1.75rem/2.25rem 'Source Serif Pro';
   }
 }
 
