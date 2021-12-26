@@ -8,7 +8,6 @@ $min-width: 1024px;
 /* grid layout */
 $col-minmax-var: minmax(0px, $col-width);
 
-
 /* desktop variables */
 $col-layout-outter-large: auto $col-minmax-var repeat(10, $col-width) $col-minmax-var auto;
 
@@ -54,11 +53,11 @@ $col-layout-outter-small: repeat(8, 1fr);
 
 @mixin wide-content-layout{
   grid-column-start: 1;
-  grid-column-end: 15;
+  grid-column-end: 9;
 
   @media only screen and (min-width: $min-width) {
-    grid-column-start: 1;
-    grid-column-end: 15;
+    grid-column-start: 2;
+    grid-column-end: 14;
   }
 }
 
