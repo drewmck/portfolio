@@ -309,6 +309,10 @@ section.contact{
         background: #FAFAFA;
       }
 
+      &.splunk-observability{
+        background: black;
+      }
+
       &.pivotal-tracker-analytics{
         background: $blue-light;
       }
