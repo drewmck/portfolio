@@ -274,73 +274,90 @@ section.contact{
   }
 }
 
-.case-studies {
-  @include full-content-layout;
-  @include grid-template;
 
-  .section-title{
-    @include standard-content-layout;
+
+.case-studies{
+
+  margin: 0 $grid-unit*-1 0 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+
+  .case-study{
+    background: red;
+    margin: 0 $grid-gap*1 0 0;
   }
 
-  .project-tile{
-    @include wide-content-layout;
-    @include grid-template;
-
-    margin-bottom: $grid-unit * 8;
-
-    .project-image-link {
-      @include wide-content-layout;
-
-      & img{
-        width: 100%;
-
-        @media only screen and (min-width: 800px) {
-          display: block;
-          width: auto;
-          margin: auto;
-        }
-      }
-
-      &.victorops-android{
-        background: $orange-light;
-      }
-
-      &.victorops-onboarding{
-        background: #FAFAFA;
-      }
-
-      &.splunk-observability{
-        background: black;
-      }
-
-      &.pivotal-tracker-analytics{
-        background: $blue-light;
-      }
-
-      &.listacular{
-        background: $blue-light;
-      }
-
-    }
-
-    .project-description{
-
-      @include standard-content-layout;
-
-      .project-title{
-        font: $content-title-font;
-        margin-bottom: $grid-unit;
-        margin-top: $grid-unit;
-      }
-
-      .project-summary{
-        margin: 0;
-        font: $light-content-font;
-        color: $neutral-light-2;
-      }
-    }
-  }
 }
+
+//
+// .case-studies {
+//   @include full-content-layout;
+//   @include grid-template;
+//
+//   .section-title{
+//     @include standard-content-layout;
+//   }
+//
+//   .project-tile{
+//     @include wide-content-layout;
+//     @include grid-template;
+//
+//     margin-bottom: $grid-unit * 8;
+//
+//     .project-image-link {
+//       @include wide-content-layout;
+//
+//       & img{
+//         width: 100%;
+//
+//         @media only screen and (min-width: 800px) {
+//           display: block;
+//           width: auto;
+//           margin: auto;
+//         }
+//       }
+//
+//       &.victorops-android{
+//         background: $orange-light;
+//       }
+//
+//       &.victorops-onboarding{
+//         background: #FAFAFA;
+//       }
+//
+//       &.splunk-observability{
+//         background: black;
+//       }
+//
+//       &.pivotal-tracker-analytics{
+//         background: $blue-light;
+//       }
+//
+//       &.listacular{
+//         background: $blue-light;
+//       }
+//
+//     }
+//
+//     .project-description{
+//
+//       @include standard-content-layout;
+//
+//       .project-title{
+//         font: $content-title-font;
+//         margin-bottom: $grid-unit;
+//         margin-top: $grid-unit;
+//       }
+//
+//       .project-summary{
+//         margin: 0;
+//         font: $light-content-font;
+//         color: $neutral-light-2;
+//       }
+//     }
+//   }
+// }
 
 // .contact {
 //   @include full-content-layout;
