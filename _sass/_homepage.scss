@@ -10,11 +10,13 @@ section{
 
 }
 
+.bio{
+  height: 90vh;
+}
+
 .bio-in-brief {
 
   @include standard-content-layout;
-
-  margin-bottom: $grid-unit * 4;
 
   @media only screen and (min-width: $min-width) {
     margin: $grid-unit * 8;
@@ -32,7 +34,7 @@ section{
     text-align: center;
 
     h3.salutations{
-      @include page-title-font;
+      @include section-title-font;
     }
 
     p{
@@ -48,15 +50,12 @@ section{
   position: relative;
   padding: 0;
   margin-top: $grid-unit*4;
-
-
-
+  margin-bottom: $grid-unit*4;
 
   img{
     margin: auto;
     display: block;
   }
-
 }
 
 .problem-statement{
@@ -91,9 +90,9 @@ section {
       margin-bottom: 6*$grid-unit;
     }
 
-    h3 {
+    h2 {
       display: inline-block;
-      @include section-title-font;
+      @include page-title-font;
       padding-bottom: 2px;
       margin-bottom: $grid-unit;
       margin-top: 0;
@@ -274,21 +273,56 @@ section.contact{
   }
 }
 
+.company{
 
+  .company-header{
+    padding: 0;
 
-.case-studies{
-
-  margin: 0 $grid-unit*-1 0 0;
-
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-
-  .case-study{
-    background: red;
-    margin: 0 $grid-gap*1 0 0;
   }
 
+  .case-studies{
+
+    margin: 0 $grid-unit*-1 $grid-unit*10 0;
+
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+
+    @media only screen and (min-width: $min-width) {
+      grid-template-columns: repeat(2, 50%);
+    }
+
+    .case-study h3{
+      padding-top: 0;
+    }
+
+    .case-study{
+      display: block;
+      margin: 0;
+      padding: $grid-unit * 2;
+      color: $neutral-dark;
+      margin: 0 $grid-unit*-2 0 $grid-unit*-2;
+    }
+
+
+    @media only screen and (min-width: $min-width) {
+      .case-study:nth-child(even){margin: 0 $grid-unit*-4 0 0; padding: $grid-unit * 4;}
+      .case-study:nth-child(odd){margin: 0 $grid-unit*4 0 $grid-unit*-4; padding: $grid-unit * 4;}
+    }
+
+    .case-study:hover{
+      background: $neutral-light-4;
+      cursor:pointer;
+      text-decoration: none;
+
+      h3{
+        text-decoration: underline;
+      }
+    }
+  }
+
+
 }
+
 
 //
 // .case-studies {
