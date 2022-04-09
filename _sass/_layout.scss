@@ -1,15 +1,15 @@
 @import 'variables';
 
 /*grid variables*/
-$grid-gap: $grid-unit*6 ;
-$col-width: $grid-unit*10;
-$min-width: 1024px;
+$grid-gap: $grid-unit*3 ;
+$col-width: $grid-unit*7;
+$min-width: 768px;
 
 /* grid layout */
 $col-minmax-var: minmax(0px, $col-width);
 
 /* desktop variables */
-$col-layout-outter-large: auto $col-minmax-var repeat(10, $col-width) $col-minmax-var auto;
+$col-layout-outter-large: auto $col-minmax-var repeat(10, $col-minmax-var) $col-minmax-var auto;
 
 /* tablet and below grid variables */
 $col-layout-outter-small: repeat(8, 1fr);
@@ -36,8 +36,8 @@ $col-layout-outter-small: repeat(8, 1fr);
   grid-column-end: 9;
 
   @media only screen and (min-width: $min-width) {
-    grid-column-start: 4;
-    grid-column-end: 12;
+    grid-column-start: 2;
+    grid-column-end: 14;
   }
 }
 

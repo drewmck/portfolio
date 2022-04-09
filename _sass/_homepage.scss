@@ -259,9 +259,8 @@ section.contact{
             margin-bottom: $grid-unit*2;
           }
           .article-description{
-            @include small-content-font;
+            @include regular-content-font;
             display: block;
-            color: $neutral-light;
           }
 
       }

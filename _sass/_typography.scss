@@ -10,7 +10,7 @@ $page-title-font: 700 2.5rem/3rem 'Source Sans Pro';
 $section-title-font: 400 2rem/3rem 'Source Sans Pro';
 $content-title-font: 600 1.5rem/2rem 'Source Sans Pro';
 
-$regular-content-font: 400 1.33rem/2.33rem 'Source Serif Pro';
+$regular-content-font: 400 1.25rem/2.00rem 'Source Serif Pro';
 $small-content-font: 400 1rem/2rem 'Source Serif Pro';
 $large-content-font: 300 1.5rem/2rem 'Source Serif Pro';
 $light-content-font: 300 20px/32px 'Source Sans Pro';
@@ -34,19 +34,19 @@ $light-content-font: 300 20px/32px 'Source Sans Pro';
 }
 
 @mixin content-title-font{
-  font: 600 1.5rem/1.75rem 'Source Sans Pro';
+  font: 600 1.5rem/2rem 'Source Sans Pro';
 
   @media only screen and (min-width: $min-width) {
-    font: 600 1.75rem/2.25rem 'Source Sans Pro';
+    font: 600 1.5rem/2rem 'Source Sans Pro';
   }
 }
 
 
 @mixin regular-content-font{
-  font: 400 1.25rem/1.75rem 'Source Serif Pro';
+  font: 400 1.33rem/2.00rem 'Source Serif Pro';
 
   @media only screen and (min-width: $min-width) {
-    font: 200 1.5rem/2rem 'Source Serif Pro';
+    font: 400 1.33rem/2.00rem 'Source Serif Pro';
   }
 }
 
