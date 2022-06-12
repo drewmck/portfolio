@@ -11,7 +11,8 @@ section{
 }
 
 .bio{
-  height: 90vh;
+  height: 50vh;
+  min-height: 700px;
 }
 
 .bio-in-brief {
@@ -32,10 +33,6 @@ section{
     display: block;
     margin: auto;
     text-align: center;
-
-    h3.salutations{
-      @include section-title-font;
-    }
 
     p{
       @include large-content-font;
@@ -64,7 +61,6 @@ section{
   text-align: center;
 
   h3{
-    font: $hello-message-font;
     font-weight: 700;
 
   }
@@ -92,7 +88,6 @@ section {
 
     h2 {
       display: inline-block;
-      @include page-title-font;
       padding-bottom: 2px;
       margin-bottom: $grid-unit;
       margin-top: 0;
@@ -219,24 +214,19 @@ section.contact{
 .articles {
 
 
-  p{
-    @include regular-content-font;
-  }
 
-  p.more-link{
-    font-style: italic;
-  }
+  .article{
 
-  ul.articles-list{
+    display: flex;
 
-    padding-left: 0;
+    margin: $grid-unit*-4;
+    padding: $grid-unit*4;
 
-    li.article{
-      margin-bottom: $grid-unit * 6;
-      display: flex;
+    margin-bottom: $grid-unit * 8;
 
+    color: $neutral-dark;
 
-      img.article-preview{
+      img.preview{
         display: none;
         width: $grid-unit*28;
         height: $grid-unit*18;
@@ -249,17 +239,16 @@ section.contact{
         }
       }
 
-      .article-summary{
+      .description{
         flex: 1;
 
-          .article-title{
+          .title{
             @include content-title-font;
             display: block;
-            color: $neutral-dark;
-            margin-bottom: $grid-unit*2;
+
+            margin-top: 0;
           }
-          .article-description{
-            @include regular-content-font;
+          .summary{
             display: block;
           }
 
@@ -267,9 +256,18 @@ section.contact{
 
     }
 
+    .article:hover{
+      background: $neutral-light-4;
+      cursor:pointer;
+      text-decoration: none;
+
+      h3{
+        text-decoration: underline;
+      }
+    }
 
 
-  }
+
 }
 
 .company{
@@ -292,12 +290,17 @@ section.contact{
 
     .case-study h3{
       padding-top: 0;
+      margin: 0;
+    }
+
+    .case-study p{
+      padding-top: $grid-unit*2;
+      margin: 0;
     }
 
     .case-study{
       display: block;
-      margin: 0;
-      padding: $grid-unit * 2;
+      padding: 0;
       color: $neutral-dark;
       margin: 0 $grid-unit*-2 0 $grid-unit*-2;
     }
@@ -321,106 +324,3 @@ section.contact{
 
 
 }
-
-
-//
-// .case-studies {
-//   @include full-content-layout;
-//   @include grid-template;
-//
-//   .section-title{
-//     @include standard-content-layout;
-//   }
-//
-//   .project-tile{
-//     @include wide-content-layout;
-//     @include grid-template;
-//
-//     margin-bottom: $grid-unit * 8;
-//
-//     .project-image-link {
-//       @include wide-content-layout;
-//
-//       & img{
-//         width: 100%;
-//
-//         @media only screen and (min-width: 800px) {
-//           display: block;
-//           width: auto;
-//           margin: auto;
-//         }
-//       }
-//
-//       &.victorops-android{
-//         background: $orange-light;
-//       }
-//
-//       &.victorops-onboarding{
-//         background: #FAFAFA;
-//       }
-//
-//       &.splunk-observability{
-//         background: black;
-//       }
-//
-//       &.pivotal-tracker-analytics{
-//         background: $blue-light;
-//       }
-//
-//       &.listacular{
-//         background: $blue-light;
-//       }
-//
-//     }
-//
-//     .project-description{
-//
-//       @include standard-content-layout;
-//
-//       .project-title{
-//         font: $content-title-font;
-//         margin-bottom: $grid-unit;
-//         margin-top: $grid-unit;
-//       }
-//
-//       .project-summary{
-//         margin: 0;
-//         font: $light-content-font;
-//         color: $neutral-light-2;
-//       }
-//     }
-//   }
-// }
-
-// .contact {
-//   @include full-content-layout;
-//   @include grid-template;
-//
-//   .section-title{
-//     @include standard-content-layout;
-//   }
-//
-//   form{
-//     @include full-content-layout;
-//     @include grid-template;
-//
-//     input {
-//       @include standard-content-layout;
-//
-//       &[type=submit]{
-//         grid-column-start: 7;
-//         grid-column-end: 9;
-//       }
-//     }
-//     p {
-//       margin-top: 0px;
-//       margin-bottom: $grid-unit;
-//       grid-column-start: 3;
-//       grid-column-end: 7;
-//
-//       &.message-field{
-//         @include standard-content-layout;
-//       }
-//     }
-//   }
-// }

@@ -1,43 +1,43 @@
 @import 'variables';
 @import 'layout';
 
-/* Font  */
-$brand-font: 500 28px 'Source Sans Pro';
-$hello-message-font: 400 2rem/2.5rem 'Source Sans Pro';
-$menu-item-font: 400 2rem 'Source Sans Pro';
+$menu-item-font: 600 1.33rem 'Source Sans Pro';
 
-$page-title-font: 700 2.5rem/3rem 'Source Sans Pro';
-$section-title-font: 400 2rem/3rem 'Source Sans Pro';
-$content-title-font: 600 1.5rem/2rem 'Source Sans Pro';
+$page-title-font: 600 3.25rem/3.75rem 'Source Serif Pro';
+$section-title-font: 600 2.5rem/3rem 'Source Serif Pro';
+$content-title-font: 500 1.75rem/2.25rem 'Source Serif Pro';
+$content-subtitle-font: 600 1.5rem/2rem 'Source Serif Pro';
+$content-emphasis-font: 600 1.25rem/1.5rem 'Source Serif Pro';
 
 $regular-content-font: 400 1.25rem/2.00rem 'Source Serif Pro';
+
 $small-content-font: 400 1rem/2rem 'Source Serif Pro';
-$large-content-font: 300 1.5rem/2rem 'Source Serif Pro';
-$light-content-font: 300 20px/32px 'Source Sans Pro';
+$large-content-font: 400 1.75rem/2.25rem 'Source Serif Pro';
+$light-content-font: 300 20px/32px 'Source Serif Pro';
 
 
 
 @mixin page-title-font{
-  font: 600 3rem/2rem 'Source Sans Pro';
+  font: 600 3rem/2rem 'Source Serif Pro';
 
   @media only screen and (min-width: $min-width) {
-    font: 600 3rem/2.25rem 'Source Sans Pro';
+    font: 600 3rem/2.25rem 'Source Serif Pro';
   }
 }
 
 @mixin section-title-font{
-  font: 600 1.5rem/2rem 'Source Sans Pro';
+  font: 600 1.5rem/2rem 'Source Serif Pro';
 
   @media only screen and (min-width: $min-width) {
-    font: 600 2rem/3rem 'Source Sans Pro';
+    font: 600 2rem/3rem 'Source Serif Pro';
   }
 }
 
 @mixin content-title-font{
-  font: 600 1.5rem/2rem 'Source Sans Pro';
+  font: $content-title-font;
 
   @media only screen and (min-width: $min-width) {
-    font: 600 1.5rem/2rem 'Source Sans Pro';
+    font: $content-title-font;
   }
 }
 
@@ -51,10 +51,10 @@ $light-content-font: 300 20px/32px 'Source Sans Pro';
 }
 
 @mixin large-content-font{
-  font: 400 1.5rem/2rem 'Source Serif Pro';
+  font:$large-content-font;
 
   @media only screen and (min-width: $min-width) {
-    font: 400 1.75rem/2.25rem 'Source Serif Pro';
+    font:$large-content-font;
   }
 }
 
@@ -67,10 +67,10 @@ $light-content-font: 300 20px/32px 'Source Sans Pro';
 }
 
 @mixin button-font{
-  font: 500 1.25rem/1rem 'Source Sans Pro';
+  font: 500 1.25rem/1rem 'Source Serif Pro';
 
   @media only screen and (min-width: $min-width) {
-    font: 500 1.25rem/1rem 'Source Sans Pro';
+    font: 500 1.25rem/1rem 'Source Serif Pro';
   }
 }
 
@@ -85,9 +85,12 @@ a:hover {color: $blue-regular; text-decoration: underline;}
 strong, b { font-weight: 700; }
 
 h1.title {font-size: 1.75rem; margin: 0; font-weight: 500;}
-h1 {font: $page-title-font; margin-top: $grid-unit*4; margin-bottom: $grid-unit*4}
-h2 {font: $section-title-font;}
-h3 {font: $content-title-font; padding-top: $grid-unit*3;}
+h1 {font: $page-title-font;}
+h2 {font: $section-title-font; margin-bottom: 0;}
+h3 {font: $content-title-font; margin-bottom: 0;}
+h4 {font: $content-subtitle-font; margin-bottom: 0;}
+h5 {font: $content-emphasis-font; margin-bottom: 0;}
+
 
 h1 a, h2 a {color: $neutral-dark; text-decoration: none;}
 
