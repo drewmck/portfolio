@@ -300,10 +300,11 @@ section.contact{
 
     .case-study{
       display: block;
-      padding: 0;
+      padding: $grid-unit * 4 $grid-unit*2;
       color: $neutral-dark;
       margin: 0 $grid-unit*-2 0 $grid-unit*-2;
     }
+
 
 
     @media only screen and (min-width: $min-width) {
