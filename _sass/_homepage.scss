@@ -76,8 +76,6 @@ section{
 //Homepage section specifics
 section {
 
-  magrin-bottom: $grid-unit * 4;
-
   .section-title{
     margin-bottom: 4*$grid-unit;
     margin-top: 0;
@@ -286,6 +284,7 @@ section.contact{
 
     @media only screen and (min-width: $min-width) {
       grid-template-columns: repeat(2, 50%);
+      gap: $grid-unit*2;
     }
 
     .case-study h3{
@@ -300,7 +299,7 @@ section.contact{
 
     .case-study{
       display: block;
-      padding: $grid-unit * 4 $grid-unit*2;
+      padding: $grid-unit*4  $grid-unit*2;
       color: $neutral-dark;
       margin: 0 $grid-unit*-2 0 $grid-unit*-2;
     }
@@ -308,7 +307,7 @@ section.contact{
 
 
     @media only screen and (min-width: $min-width) {
-      .case-study:nth-child(even){margin: 0 $grid-unit*-4 0 0; padding: $grid-unit * 4;}
+      .case-study:nth-child(even){margin: 0 $grid-unit*4 0 0; padding: $grid-unit * 4;}
       .case-study:nth-child(odd){margin: 0 $grid-unit*4 0 $grid-unit*-4; padding: $grid-unit * 4;}
     }
 
